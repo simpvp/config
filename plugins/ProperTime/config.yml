@@ -1,0 +1,25 @@
+propertime:
+  world:
+    timespeedday: 1.0
+    timespeednight: 1.0
+    timespeeddusk: 1.0
+    timespeeddawn: 1.0
+    perma: none
+  world_nether:
+    timespeedday: 1.0
+    timespeednight: 1.0
+    timespeeddusk: 1.0
+    timespeeddawn: 1.0
+    perma: none
+  world_the_end:
+    timespeedday: 1.0
+    timespeednight: 1.0
+    timespeeddusk: 1.0
+    timespeeddawn: 1.0
+    perma: none
+  pvp:
+    timespeedday: 1.0
+    timespeednight: 1.0
+    timespeeddusk: 1.0
+    timespeeddawn: 1.0
+    perma: none
