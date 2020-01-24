@@ -104,7 +104,7 @@ world-settings:
     grass-spread-tick-rate: 1
     water-over-lava-flow-speed: 5
     bed-search-radius: 1
-    use-faster-eigencraft-redstone: false
+    use-faster-eigencraft-redstone: true
     nether-ceiling-void-damage: false
     container-update-tick-rate: 1
     allow-non-player-entities-on-scoreboards: false
