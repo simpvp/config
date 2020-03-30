@@ -121,6 +121,7 @@ world-settings:
     all-chunks-are-slime-chunks: false
     game-mechanics:
       disable-relative-projectile-velocity: false
+      disable-pillager-patrols: true
       scan-for-legacy-ender-dragon: true
       villages-load-chunks: false
       disable-chest-cat-detection: false
