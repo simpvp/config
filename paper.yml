@@ -55,7 +55,7 @@ messages:
     flying-vehicle: Flying is not enabled on this server
 timings:
   server-name: Unknown Server
-  enabled: true
+  enabled: false
   verbose: true
   server-name-privacy: false
   hidden-config-entries:
@@ -65,6 +65,8 @@ timings:
   history-length: 3600
 world-settings:
   default:
+    tracker-update-distance: 1.0
+    light-queue-size: 20
     seed-based-feature-search: true
     fix-zero-tick-instant-grow-farms: true
     portal-create-radius: 16
@@ -137,6 +139,14 @@ world-settings:
       disable-sprint-interruption-on-attack: false
       shield-blocking-delay: 5
       disable-unloaded-chunk-enderpearl-exploit: true
+      pillager-patrols:
+        spawn-chance: 0.2
+        spawn-delay:
+          per-player: false
+          ticks: 12000
+        start:
+          per-player: false
+          day: 5
     max-growth-height:
       cactus: 3
       reeds: 3
