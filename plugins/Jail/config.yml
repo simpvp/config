@@ -22,3 +22,7 @@ blocked_commands:
   - world
   - op
   - event
+  - kill
+  - age
+  - requestrestart
+  - cancelrestart
