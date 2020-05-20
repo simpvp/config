@@ -10,6 +10,14 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    above_map_limit:
+        min: {x: -30000000, y: 600, z: -30000000}
+        max: {x: 30000000, y: 3000, z: 30000000}
+        members: {}
+        flags: {entry: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
     end_escape:
         min: {x: -2, y: 109, z: -2}
         max: {x: 2, y: 109, z: 2}
