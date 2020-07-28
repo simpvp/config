@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Server will not automatically restart within this many seconds of already restarting
-RESTART_LIMIT=2
+RESTART_LIMIT=60
 
 while true
 do
