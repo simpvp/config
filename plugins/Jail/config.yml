@@ -26,3 +26,4 @@ blocked_commands:
   - age
   - requestrestart
   - cancelrestart
+  - tps
