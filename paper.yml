@@ -42,7 +42,7 @@ settings:
     page-max: 2560
     total-multiplier: 0.98
   async-chunks:
-    enable: false
+    enable: true
     threads: -1
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
