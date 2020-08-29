@@ -11,10 +11,10 @@
 #
 regions:
     above_nether:
-        min: {x: -8000000.0, y: 128.0, z: -8000000.0}
-        flags: {entry: deny}
-        max: {x: 8000000.0, y: 256.0, z: 8000000.0}
-        priority: 0
-        type: cuboid
-        owners: {}
+        min: {x: -8000000, y: 128, z: -8000000}
+        max: {x: 8000000, y: 256, z: 8000000}
         members: {}
+        flags: {entry: deny}
+        owners: {}
+        type: cuboid
+        priority: 0

@@ -74,6 +74,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 5
+    spawn-floating-island-hideout-pistons:
+        min: {x: -4, y: 230, z: 25}
+        max: {x: -4, y: 233, z: 25}
+        members: {}
+        flags: {block-break: allow, pistons: allow, block-place: allow}
+        owners: {}
+        type: cuboid
+        priority: 10
     spawn-melons-west-center:
         min: {x: 6, y: 59, z: 19}
         max: {x: 8, y: 59, z: 19}
@@ -92,10 +100,10 @@ regions:
             interact: allow, chest-access: allow, firework-damage: deny, fire-spread: deny,
             enderdragon-block-damage: deny, vehicle-place: deny, mob-damage: deny,
             entity-painting-destroy: deny, lightning: deny, chorus-fruit-teleport: deny,
-            lighter: deny, enderman-grief: deny, pvp: deny, mob-spawning: deny, enderpearl: deny,
-            creeper-explosion: deny, potion-splash: deny, lava-flow: deny, tnt: deny,
-            ghast-fireball: deny, farewell: '&cYou are now leaving the spawn. Enabling
-                PvP.'}
+            lighter: deny, enderman-grief: deny, pvp: deny, pistons: deny, mob-spawning: deny,
+            enderpearl: deny, creeper-explosion: deny, potion-splash: deny, tnt: deny,
+            lava-flow: deny, ghast-fireball: deny, farewell: '&cYou are now leaving
+                the spawn. Enabling PvP.'}
         owners: {}
         type: cuboid
         priority: 3

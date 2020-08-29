@@ -1,24 +1,3 @@
-#
-# WorldGuard's main configuration file
-#
-# This is the global configuration file. Anything placed into here will
-# be applied to all worlds. However, each world has its own configuration
-# file to allow you to replace most settings in here for that world only.
-#
-# About editing this file:
-# - DO NOT USE TABS. You MUST use spaces or Bukkit will complain. If
-#   you use an editor like Notepad++ (recommended for Windows users), you
-#   must configure it to "replace tabs with spaces." In Notepad++, this can
-#   be changed in Settings > Preferences > Language Menu.
-# - Don't get rid of the indents. They are indented so some entries are
-#   in categories (like "enforce-single-session" is in the "protection"
-#   category.
-# - If you want to check the format of this file before putting it
-#   into WorldGuard, paste it into http://yaml-online-parser.appspot.com/
-#   and see if it gives "ERROR:".
-# - Lines starting with # are comments and so they are ignored.
-#
-
 regions:
     use-scheduler: true
     sql:
@@ -30,7 +9,7 @@ regions:
     enable: true
     invincibility-removes-mobs: false
     high-frequency-flags: true
-    wand: 297
+    wand: wooden_axe
     max-claim-volume: 30000
     claim-only-inside-existing-regions: false
     max-region-count-per-player:
@@ -42,6 +21,10 @@ regions:
         keep-names-that-lack-uuids: false
     fake-player-build-override: true
     protect-against-liquid-flow: false
+    use-paper-entity-origin: false
+    cancel-chat-without-recipients: true
+    nether-portal-protection: true
+    location-flags-only-inside-regions: false
 auto-invincible: false
 use-player-move-event: true
 host-keys: {}
@@ -96,6 +79,7 @@ mobs:
     block-zombie-door-destruction: false
     disable-snowman-trails: false
     allow-tamed-spawns: true
+    block-armor-stand-destroy: false
 player-damage:
     disable-fall-damage: false
     disable-lava-damage: false
@@ -110,6 +94,7 @@ player-damage:
     disable-explosion-damage: false
     disable-mob-damage: false
     disable-death-messages: false
+    reset-fall-on-void-teleport: false
 chest-protection:
     enable: false
     disable-off-check: false
@@ -117,8 +102,30 @@ crops:
     disable-creature-trampling: false
     disable-player-trampling: false
 weather:
-    # The following setting is at Pippinger's request, to prevent lightning making wooden buildings infeasible aboveground
-    prevent-lightning-strike-blocks: [PLANKS, WOODEN_SLAB, OAK_STAIRS, SPRUCE_STAIRS, BIRCH_STAIRS, JUNGLE_STAIRS, ACACIA_STAIRS, DARK_OAK_STAIRS]
+    prevent-lightning-strike-blocks:
+    - acacia_planks
+    - birch_planks
+    - crimson_planks
+    - dark_oak_planks
+    - jungle_planks
+    - oak_planks
+    - spruce_planks
+    - warped_planks
+    - acacia_stairs
+    - birch_stairs
+    - crimson_stairs
+    - dark_oak_stairs
+    - jungle_stairs
+    - oak_stairs
+    - spruce_stairs
+    - acacia_slab
+    - birch_slab
+    - crimson_slab
+    - dark_oak_slab
+    - jungle_slab
+    - oak_slab
+    - petrified_oak_slab
+    - spruce_slab
     disable-lightning-strike-fire: false
     disable-thunderstorm: false
     disable-weather: false
@@ -126,6 +133,7 @@ weather:
     disable-powered-creepers: false
     always-raining: false
     always-thundering: false
+    disable-villager-witchification: false
 dynamics:
     disable-mushroom-spread: false
     disable-ice-melting: false
@@ -138,6 +146,8 @@ dynamics:
     disable-vine-growth: false
     disable-soil-dehydration: false
     snow-fall-blocks: []
+    disable-crop-growth: false
+    disable-coral-block-fade: false
 blacklist:
     use-as-whitelist: false
     logging:
@@ -157,9 +167,11 @@ summary-on-start: true
 security:
     deop-everyone-on-join: false
     block-in-game-op-command: false
+    host-keys-allow-forge-clients: false
 gameplay:
     block-potions: []
     block-potions-overly-reliably: false
+    disable-conduit-effects: false
 use-player-teleports: true
 auto-invincible-group: false
 auto-no-drowning-group: false
@@ -170,3 +182,6 @@ event-handling:
     block-entity-spawns-with-untraceable-cause: false
     interaction-whitelist: []
     emit-block-use-at-feet: []
+    ignore-hopper-item-move-events: false
+    break-hoppers-on-denied-move: true
+use-particle-effects: true

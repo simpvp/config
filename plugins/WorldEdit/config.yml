@@ -48,7 +48,7 @@ snapshots:
     directory:
 
 navigation-wand:
-    item: 345
+    item: compass
     max-distance: 100
 
 scripting:
@@ -65,7 +65,7 @@ history:
     size: 15
     expiration: 10
 
-wand-item: 271
+wand-item: wooden_axe
 shell-save-type:
 no-double-slash: false
 no-op-permissions: false
