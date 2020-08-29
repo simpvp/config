@@ -22,7 +22,7 @@ settings:
   connection-throttle: 4000
   query-plugins: false
   deprecated-verbose: default
-  shutdown-message: Server is being restarted
+  shutdown-message: Server is being restarted - simpvp.net
   ping-packet-limit: 100
   use-exact-login-location: false
 spawn-limits:
