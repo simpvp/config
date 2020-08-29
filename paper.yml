@@ -10,9 +10,12 @@
 # Website: https://papermc.io/ 
 # Docs: https://paper.readthedocs.org/ 
 
+allow-perm-block-break-exploits: false
 verbose: false
 config-version: 20
 settings:
+  console-has-all-permissions: false
+  max-joins-per-tick: 3
   chunk-tasks-per-tick: 1000
   load-permissions-yml-before-plugins: true
   bungee-online-mode: true
@@ -44,6 +47,8 @@ settings:
   async-chunks:
     enable: true
     threads: -1
+  unsupported-settings:
+    allow-piston-duplication: true
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
