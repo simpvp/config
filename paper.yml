@@ -10,7 +10,7 @@
 # Website: https://papermc.io/ 
 # Docs: https://paper.readthedocs.org/ 
 
-allow-perm-block-break-exploits: false
+allow-perm-block-break-exploits: true
 verbose: false
 config-version: 20
 settings:
@@ -49,7 +49,6 @@ settings:
     threads: -1
   unsupported-settings:
     allow-piston-duplication: true
-    allow-permanent-block-break-exploits: true
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
