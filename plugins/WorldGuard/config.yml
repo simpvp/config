@@ -25,15 +25,18 @@ regions:
     cancel-chat-without-recipients: true
     nether-portal-protection: true
     location-flags-only-inside-regions: false
+    disable-bypass-by-default: false
+    announce-bypass-status: false
 auto-invincible: false
 use-player-move-event: true
 host-keys: {}
-op-permissions: true
+op-permissions: false
 protection:
     item-durability: true
     remove-infinite-stacks: false
     disable-xp-orb-drops: false
     disable-obsidian-generators: false
+    use-max-priority-association: false
 simulation:
     sponge:
         enable: false
@@ -185,3 +188,7 @@ event-handling:
     ignore-hopper-item-move-events: false
     break-hoppers-on-denied-move: true
 use-particle-effects: true
+disable-permission-cache: false
+turtle-egg:
+    disable-creature-trampling: false
+    disable-player-trampling: false

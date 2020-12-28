@@ -26,6 +26,7 @@ settings:
   ping-packet-limit: 100
   use-exact-login-location: false
 spawn-limits:
+  water-ambient: 20
   monsters: 15
   animals: 5
   water-animals: 1
@@ -34,6 +35,7 @@ chunk-gc:
   period-in-ticks: 600
   load-threshold: 10
 ticks-per:
+  water-ambient-spawns: 1
   water-spawns: 1
   ambient-spawns: 1
   animal-spawns: 400

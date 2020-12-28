@@ -69,7 +69,7 @@ checks:
       active: true
       actions: vl>100 log:bdirection:0:3:if
     fastbreak:
-      active: true
+      active: false
       strict: true
       delay: 100
       intervalsurvival: 100

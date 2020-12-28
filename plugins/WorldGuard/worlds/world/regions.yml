@@ -34,14 +34,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 5
-    end_portal:
-        min: {x: 2238, y: 36, z: 774}
-        max: {x: 2242, y: 38, z: 778}
-        members: {}
-        flags: {water-flow: deny, pvp: allow, lava-flow: deny}
-        owners: {}
-        type: cuboid
-        priority: 7
     spawn-melons-center:
         min: {x: 16, y: 58, z: 18}
         max: {x: 16, y: 58, z: 20}
@@ -140,6 +132,15 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    end:
+        min: {x: 2243, y: 34, z: 774}
+        max: {x: 2247, y: 39, z: 778}
+        members: {}
+        flags: {water-flow: deny, block-break: deny, lava-flow: deny, pvp: deny, block-place: deny}
+        owners:
+            unique-ids: [fe84938a-54bf-4b34-a202-3c7fc40f2166, 04c7b357-2279-4d99-ba9c-adb48868b19f]
+        type: cuboid
+        priority: 0
     endportal3:
         min: {x: -1119, y: 139, z: -159}
         max: {x: -1117, y: 142, z: -157}
@@ -178,8 +179,8 @@ regions:
         members: {}
         flags:
             creeper-explosion: deny
-            use: deny
             blocked-cmds: [/world]
+            use: deny
             mob-damage: deny
             vehicle-destroy: allow
             enderman-grief: deny
@@ -191,6 +192,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    spawn-donationbox:
+        min: {x: 16, y: 33, z: -12}
+        max: {x: 18, y: 66, z: -9}
+        members: {}
+        flags: {chest-access: deny}
+        owners: {}
+        type: cuboid
+        priority: 6
     __global__:
         members: {}
         flags: {}
