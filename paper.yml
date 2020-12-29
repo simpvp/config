@@ -150,7 +150,7 @@ world-settings:
     mob-spawner-tick-rate: 2
     all-chunks-are-slime-chunks: false
     game-mechanics:
-      fix-curing-zombie-villager-discount-exploit: true
+      fix-curing-zombie-villager-discount-exploit: false
       nerf-pigmen-from-nether-portals: false
       disable-relative-projectile-velocity: false
       disable-pillager-patrols: true
