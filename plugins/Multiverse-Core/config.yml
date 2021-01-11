@@ -32,3 +32,5 @@ multiverse-configuration:
   teleportcooldown: '1000'
   defaultportalsearch: 'true'
   portalsearchradius: '128'
+  autopurge: 'true'
+  idonotwanttodonate: 'false'

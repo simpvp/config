@@ -27,3 +27,6 @@ blocked_commands:
   - requestrestart
   - cancelrestart
   - tps
+
+geoipDatabase: "/usr/share/GeoIP"
+

@@ -78,6 +78,7 @@ timings:
   hidden-config-entries:
   - database
   - settings.bungeecord-addresses
+  - settings.velocity-support.secret
   history-interval: 300
   history-length: 3600
 world-settings:
@@ -150,6 +151,7 @@ world-settings:
     mob-spawner-tick-rate: 2
     all-chunks-are-slime-chunks: false
     game-mechanics:
+      disable-mob-spawner-spawn-egg-transformation: false
       fix-curing-zombie-villager-discount-exploit: true
       nerf-pigmen-from-nether-portals: false
       disable-relative-projectile-velocity: false
@@ -173,6 +175,9 @@ world-settings:
     max-growth-height:
       cactus: 3
       reeds: 3
+      bamboo:
+        max: 16
+        min: 11
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 600
@@ -199,6 +204,7 @@ world-settings:
       cooldown-when-full: true
       disable-move-event: true
     anti-xray:
+      use-permission: false
       lava-obscures: false
       enabled: false
       engine-mode: 1
@@ -238,3 +244,12 @@ world-settings:
       spawn-chance-failure-increment: 25
       spawn-chance-min: 25
       spawn-chance-max: 75
+    mobs-can-always-pick-up-loot:
+      zombies: false
+      skeletons: false
+    door-breaking-difficulty:
+      zombie:
+      - HARD
+      vindicator:
+      - NORMAL
+      - HARD
