@@ -51,7 +51,7 @@ settings:
     enable: true
     threads: -1
   unsupported-settings:
-    allow-headless-pistons: false
+    allow-headless-pistons: true
     allow-permanent-block-break-exploits: true
     allow-piston-duplication: false
     allow-headless-pistons-readme: This setting controls if players should be able
