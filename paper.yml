@@ -109,7 +109,7 @@ world-settings:
     fire-physics-event-for-redstone: false
     use-vanilla-world-scoreboard-name-coloring: false
     delay-chunk-unloads-by: 10s
-    max-auto-save-chunks-per-tick: 24
+    max-auto-save-chunks-per-tick: 8
     save-queue-limit-for-auto-save: 50
     enable-treasure-maps: true
     treasure-maps-return-already-discovered: false
