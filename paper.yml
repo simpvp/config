@@ -152,7 +152,7 @@ world-settings:
     all-chunks-are-slime-chunks: false
     game-mechanics:
       disable-mob-spawner-spawn-egg-transformation: false
-      fix-curing-zombie-villager-discount-exploit: true
+      fix-curing-zombie-villager-discount-exploit: false
       nerf-pigmen-from-nether-portals: false
       disable-relative-projectile-velocity: false
       disable-pillager-patrols: true
