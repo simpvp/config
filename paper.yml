@@ -83,6 +83,10 @@ timings:
   history-length: 3600
 world-settings:
   default:
+    only-players-collide: false
+    allow-vehicle-collisions: true
+    portal-search-vanilla-dimension-scaling: true
+    max-leash-distance: 10.0
     should-remove-dragon: false
     fix-climbing-bypassing-cramming-rule: false
     zombies-target-turtle-eggs: true
@@ -253,3 +257,8 @@ world-settings:
       vindicator:
       - NORMAL
       - HARD
+    entity-per-chunk-save-limit:
+      experience_orb: -1
+      snowball: -1
+      ender_pearl: -1
+      arrow: -1
