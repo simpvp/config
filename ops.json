@@ -16,5 +16,11 @@
     "name": "MisterStrawman",
     "level": 4,
     "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "f232030a-0009-47c5-a858-22420d819499",
+    "name": "MoWobbler",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]

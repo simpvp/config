@@ -7,7 +7,7 @@ global:
     # Number of seconds to wait until a new update is downloaded
     delay: 43200 # 12 hours
  
-  metrics: true
+  metrics: false
   
   # Automatically compile structure modifiers 
   background compiler: true

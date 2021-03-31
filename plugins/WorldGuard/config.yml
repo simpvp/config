@@ -83,6 +83,7 @@ mobs:
     disable-snowman-trails: false
     allow-tamed-spawns: true
     block-armor-stand-destroy: false
+    block-vehicle-entry: false
 player-damage:
     disable-fall-damage: false
     disable-lava-damage: false
