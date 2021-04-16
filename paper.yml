@@ -10,6 +10,7 @@
 # Website: https://papermc.io/ 
 # Docs: https://paper.readthedocs.org/ 
 
+use-display-name-in-quit-message: false
 verbose: false
 config-version: 20
 settings:
@@ -83,6 +84,8 @@ timings:
   history-length: 3600
 world-settings:
   default:
+    allow-using-signs-inside-spawn-protection: false
+    fix-wither-targeting-bug: false
     ender-dragons-death-always-places-dragon-egg: false
     update-pathfinding-on-block-update: true
     only-players-collide: false

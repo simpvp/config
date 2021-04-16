@@ -93,9 +93,9 @@ regions:
             enderdragon-block-damage: deny, vehicle-place: deny, mob-damage: deny,
             entity-painting-destroy: deny, lightning: deny, wither-damage: deny, chorus-fruit-teleport: deny,
             lighter: deny, enderman-grief: deny, pistons: deny, pvp: deny, mob-spawning: deny,
-            enderpearl: deny, creeper-explosion: deny, potion-splash: deny, tnt: deny,
-            lava-flow: deny, ghast-fireball: deny, farewell: '&cYou are now leaving
-                the spawn. Enabling PvP.'}
+            enderpearl: deny, creeper-explosion: deny, potion-splash: deny, lava-flow: deny,
+            tnt: deny, ghast-fireball: deny, farewell: '&cYou are now leaving the
+                spawn. Enabling PvP.'}
         owners: {}
         type: cuboid
         priority: 3
@@ -136,7 +136,7 @@ regions:
         min: {x: 2243, y: 34, z: 774}
         max: {x: 2247, y: 39, z: 778}
         members: {}
-        flags: {water-flow: deny, block-break: deny, lava-flow: deny, pvp: deny, block-place: deny}
+        flags: {water-flow: deny, block-break: deny, pvp: deny, lava-flow: deny, block-place: deny}
         owners:
             unique-ids: [fe84938a-54bf-4b34-a202-3c7fc40f2166, 04c7b357-2279-4d99-ba9c-adb48868b19f]
         type: cuboid
