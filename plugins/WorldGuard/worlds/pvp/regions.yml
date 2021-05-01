@@ -22,7 +22,7 @@ regions:
                 'minecraft:guardian', 'minecraft:vindicator', 'minecraft:stray', 'minecraft:silverfish',
                 'minecraft:enderman', 'minecraft:magma_cube', 'minecraft:endermite',
                 'minecraft:spider', 'minecraft:vex', 'minecraft:zombie', 'minecraft:creeper',
-                'minecraft:zombie_villager', 'minecraft:slime', 'minecraft:evoker']
+                'minecraft:zombie_villager', 'minecraft:slime', 'minecraft:evoker', 'minecraft:wither']
         owners: {}
         type: global
         priority: 0

@@ -1,21 +1,21 @@
 # The world the jail is in
-world: world
+world: pvp
 
 # The two corners of the jail. Jail will be a cube inside these two corners
 corner1:
-  x: -31 
+  x: -200
   y: 0
-  z: -31
+  z: -200
 corner2:
-  x: 31
+  x: 200
   y: 255
-  z: 31
+  z: 200
 
 # The point at which jailed players will be teleported to
 spawn:
-  x: 0
-  y: 67 
-  z: 0
+  x: -100
+  y: 100
+  z: 100
 
 blocked_commands:
   - me
