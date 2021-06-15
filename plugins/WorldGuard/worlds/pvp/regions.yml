@@ -17,12 +17,13 @@ regions:
             creeper-explosion: deny
             enderman-grief: deny
             deny-spawn: ['minecraft:blaze', 'minecraft:skeleton', 'minecraft:elder_guardian',
+                'minecraft:skeleton_horse', 'minecraft:ghast', 'minecraft:guardian',
+                'minecraft:vindicator', 'minecraft:magma_cube', 'minecraft:spider',
+                'minecraft:creeper', 'minecraft:wither', 'minecraft:slime', 'minecraft:evoker',
                 'minecraft:phantom', 'minecraft:witch', 'minecraft:wither_skeleton',
-                'minecraft:husk', 'minecraft:skeleton_horse', 'minecraft:ghast', 'minecraft:shulker',
-                'minecraft:guardian', 'minecraft:vindicator', 'minecraft:stray', 'minecraft:silverfish',
-                'minecraft:enderman', 'minecraft:magma_cube', 'minecraft:endermite',
-                'minecraft:spider', 'minecraft:vex', 'minecraft:zombie', 'minecraft:creeper',
-                'minecraft:zombie_villager', 'minecraft:slime', 'minecraft:evoker', 'minecraft:wither']
+                'minecraft:husk', 'minecraft:shulker', 'minecraft:stray', 'minecraft:silverfish',
+                'minecraft:enderman', 'minecraft:endermite', 'minecraft:vex', 'minecraft:zombie',
+                'minecraft:zombie_villager']
         owners: {}
         type: global
         priority: 0
