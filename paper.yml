@@ -175,7 +175,7 @@ world-settings:
       disable-player-crits: false
       disable-sprint-interruption-on-attack: false
       shield-blocking-delay: 5
-      disable-unloaded-chunk-enderpearl-exploit: true
+      disable-unloaded-chunk-enderpearl-exploit: false
       pillager-patrols:
         spawn-chance: 0.2
         spawn-delay:

@@ -15,7 +15,9 @@ regions:
         flags:
             sleep: deny
             creeper-explosion: deny
+            water-flow: allow
             enderman-grief: deny
+            lava-flow: deny
             deny-spawn: ['minecraft:blaze', 'minecraft:skeleton', 'minecraft:elder_guardian',
                 'minecraft:skeleton_horse', 'minecraft:ghast', 'minecraft:guardian',
                 'minecraft:vindicator', 'minecraft:magma_cube', 'minecraft:spider',
