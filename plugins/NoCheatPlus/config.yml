@@ -376,7 +376,7 @@ checks:
         chest: 155
         shortterm: 4
         normal: 15
-      actions: vl>50 log:fastclick:3:5:cif
+      actions: vl>500 log:fastclick:3:5:cif
       improbable:
         weight: 0.7
     instantbow:

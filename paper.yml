@@ -96,7 +96,7 @@ world-settings:
     portal-search-vanilla-dimension-scaling: true
     max-leash-distance: 10.0
     should-remove-dragon: false
-    fix-climbing-bypassing-cramming-rule: false
+    fix-climbing-bypassing-cramming-rule: true
     zombies-target-turtle-eggs: true
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true
@@ -249,7 +249,7 @@ world-settings:
       flat-bedrock: false
     baby-zombie-movement-modifier: 0.5
     viewdistances:
-      no-tick-view-distance: -1
+      no-tick-view-distance: 10
     wandering-trader:
       spawn-minute-length: 1200
       spawn-day-length: 24000
