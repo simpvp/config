@@ -1,0 +1,178 @@
+announcement: ''
+motd: |2
+       Welcome to §6§lhttp://simpvp.net/
+
+  §cCheating is not allowed, and will result in a permanent jail with no warning or second chance. This rule is enfored very strictly.
+disableCancelRestart:
+- a47a234b-085f-4e8a-98b4-ab4ef26d9483
+- 87774a6f-bc41-466c-b659-e9c46e1f92e0
+simpvpHostnameChecker: true
+disableElderGuardians:
+- world
+projectileOwnerMaxDistance: 300
+blockLogWorlds: []
+disableSelectors: true
+logNonPlayerCmds: true
+disabledCmds:
+- about
+- deop
+- resetdeathban
+- version
+- icanhasbukkit
+- ver
+- reload
+- permissions
+- perm
+- perms
+- god
+- '?'
+- seed
+- nocheatplus
+- debug
+- publish
+- defaultgamemode
+- multiworld
+- mw
+- goto
+- difficulty
+- gamerule
+- weather
+- toggledownfall
+- spawnpoint
+- restart
+- offline
+- deathban
+- achievement
+- op
+- mvl
+- mvlist
+- mvh
+- mvhelp
+- mvsearch
+- mvi
+- mvinfo
+- mvc
+- mvcreate
+- mvimport
+- mvr
+- mvreload
+- mvss
+- mvsetspawn
+- mvcoord
+- mvtp
+- mvw
+- mvwho
+- mvs
+- mvspawn
+- mvunload
+- mvremove
+- mvdelete
+- mvconfirm
+- mvpurge
+- mvm
+- mvmodify
+- mvmset
+- mvmadd
+- mvmremove
+- mvmclear
+- mvgamerule
+- mvrule
+- mvenv
+- mvsilent
+- mvsleep
+nonplayerCmds:
+- psudo
+- psudoas
+- heal
+oponlyCmds:
+- warp
+- bukkit
+- stop
+- lag
+- lb
+- ncp
+- dw
+- dp
+- x
+- f
+- b
+- multiinv
+- logblock
+- we
+- mv
+NoNewPlayers: -1
+infoCommands:
+- command: give
+  message: |
+    §aWe play legit here. Go punch some blocks if you want items.
+  ignoreOps: true
+- command: spawn
+  message: |
+    §aThis is a vanilla-like server, we do not have any spawn command.
+    If you wish to go to spawn, either walk or use /kill
+    We will not teleport you, do not bother asking us.
+- command: tpa
+  message: |
+    §aThis is a vanilla-like server, we do not have any /tpa command. If you wish to play together with a friend, find your friend using F3 or /coords
+- command: time
+  message: |
+    §aWe play legit here. Go wait for day in a hole.
+- command: set
+  message: |
+    §aYou cannot set home here. You can set your spawnpoint using a bed, but the only way of going back to your bed is by dying.
+- command: sethome
+  message: |
+    §aYou cannot set home here. You can set your spawnpoint using a bed, but the only way of going back to your bed is by dying.
+- command: home
+  message: |
+    §aThe only way of teleporting to your spawnpoint is by dying.
+    (§6/kill§a.)
+- command: kit
+  message: |
+    §aThere are no kits here. It takes literally 2 minutes to get a full stone set. Find some trees, make a crafting table, make some sticks, mine some stone, and you're done. If that's too hard for you, then this is clearly not the right server for you.
+- command: gm
+  message: |
+    §aThis is a survival server, you cannot change your gamemode. Doesn't matter if you're a planet minecraft reviewer, a professional builder, or someone with /force op, this is still a survival server.
+- command: gamemode
+  ignoreOps: true
+  message: |
+    §aThis is a survival server, you cannot change your gamemode. Doesn't matter if you're a planet minecraft reviewer, a professional builder, or someone with /force op, this is still a survival server.
+- command: seed
+  message: 'Seed: 567325795392988'
+- command: captcha
+  message: '§aThe secret word is: §bcactus'
+- command: specs
+  message: |
+    The server is rented from hetzner and located in Finland. The specs are:
+    * AMD Ryzen 5 3600
+    * 64 GB DDR4 RAM
+    * 1 TB SSD + 6 TB HDD (lvmcache)
+    * 1 Gbit/s internet connection
+- command: rules
+  message: |
+    §3§n§l=== RULES ===§r
+
+    §aFor detailed information, please see §bhttp://simpvp.net/rules§r
+     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    §3#1 §6Griefing, killing, stealing, and scamming are §lallowed§r
+     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    §3#2 §6Hacking/cheating is not allowed. This includes: Flymod, X-ray, and any mod or abuse of glitches that confers a significant advantage. Violation will result in a permaban/jail.§r
+     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    §3#3 §6Do not any real life information or content, whether fake or not, about people without permission. Do not contact people outside the game without permission.
+- command: help
+  message: |
+    /kill - §6Commits suicide§r
+    /tell - §6Sends a private message§r
+    /coords - §6Displays your current coordinates§r
+    /ignore [player] - §6(Un)hides messages from selected player§r
+    /r - §6Sends a PM to the last person you received a PM from§r
+    /m - §6Sends a PM to the last person you sent a PM to§r
+    /age [player] - §6Check player's server age/playtime§r
+- command: tp
+  message: §aWe do not have any /tp command here. If you need to go somewhere, you'll
+    have to walk.
+  ignoreOps: true
+- command: hamandcheese
+  message: §aHam and cheese samdwich and cheese and ham.
+- command: friedcactus
+  message: §2fried cactus.
