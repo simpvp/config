@@ -152,13 +152,11 @@ infoCommands:
   message: |
     §3§n§l=== RULES ===§r
 
-    §aFor detailed information, please see §bhttp://simpvp.net/rules§r
-     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    §3#1 §6Griefing, killing, stealing, and scamming are §lallowed§r
-     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    §3#2 §6Hacking/cheating is not allowed. This includes: Flymod, X-ray, and any mod or abuse of glitches that confers a significant advantage. Violation will result in a permaban/jail.§r
-     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    §3#3 §6Do not any real life information or content, whether fake or not, about people without permission. Do not contact people outside the game without permission.
+    Short summary:
+    * §cCheating/hacking/glitch abuse is not allowed.§r
+    * §cDoxing is not allowed.§r
+
+    §2Please read the full rules at §bhttp://simpvp.net/rules§r
 - command: help
   message: |
     /kill - §6Commits suicide§r
