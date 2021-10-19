@@ -4,8 +4,9 @@ motd: |2
 
   §cCheating is not allowed, and will result in a permanent jail with no warning or second chance. This rule is enfored very strictly.
 disableCancelRestart:
-- a47a234b-085f-4e8a-98b4-ab4ef26d9483
-- 87774a6f-bc41-466c-b659-e9c46e1f92e0
+- 47f829c3-7c83-4ce2-87c1-a3e3299f5126
+- 15247f8c-54ab-4315-9d08-7ae17395a4c5
+- dabec769-9e12-4680-81bf-833e691e71dd
 simpvpHostnameChecker: true
 disableElderGuardians:
 - world
@@ -38,12 +39,12 @@ disabledCmds:
 - gamerule
 - weather
 - toggledownfall
+- op
 - spawnpoint
 - restart
 - offline
 - deathban
 - achievement
-- op
 - mvl
 - mvlist
 - mvh
@@ -157,6 +158,12 @@ infoCommands:
     * §cDoxing is not allowed.§r
 
     §2Please read the full rules at §bhttp://simpvp.net/rules§r
+- command: friedcactus
+  message: |
+    https://www.youtube.com/watch?v=CfPNVsJIp_Y
+- command: hamandcheese
+  message: |
+    https://www.youtube.com/watch?v=jvmzSUKgf_I
 - command: help
   message: |
     /kill - §6Commits suicide§r
@@ -170,7 +177,3 @@ infoCommands:
   message: §aWe do not have any /tp command here. If you need to go somewhere, you'll
     have to walk.
   ignoreOps: true
-- command: hamandcheese
-  message: §aHam and cheese samdwich and cheese and ham.
-- command: friedcactus
-  message: §2fried cactus.
