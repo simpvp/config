@@ -109,9 +109,9 @@ regions:
             enderdragon-block-damage: deny, vehicle-place: deny, mob-damage: deny,
             entity-painting-destroy: deny, lightning: deny, wither-damage: deny, chorus-fruit-teleport: deny,
             lighter: deny, enderman-grief: deny, pistons: deny, pvp: deny, mob-spawning: deny,
-            enderpearl: deny, creeper-explosion: deny, potion-splash: deny, tnt: deny,
-            lava-flow: deny, ghast-fireball: deny, farewell: '&cYou are now leaving
-                the spawn. Enabling PvP.'}
+            enderpearl: deny, creeper-explosion: deny, potion-splash: deny, lava-flow: deny,
+            tnt: deny, ghast-fireball: deny, farewell: '&cYou are now leaving the
+                spawn. Enabling PvP.'}
         owners: {}
         type: cuboid
         priority: 3
@@ -136,7 +136,9 @@ regions:
         max: {x: 100, y: 255, z: 100}
         members: {}
         flags:
+            water-flow: deny
             passthrough: allow
+            lava-flow: deny
             deny-spawn: ['minecraft:blaze', 'minecraft:skeleton', 'minecraft:elder_guardian',
                 'minecraft:witch', 'minecraft:wither_skeleton', 'minecraft:husk',
                 'minecraft:skeleton_horse', 'minecraft:ghast', 'minecraft:shulker',
@@ -200,8 +202,8 @@ regions:
             mob-damage: deny
             vehicle-destroy: allow
             enderman-grief: deny
-            tnt: deny
             pvp: deny
+            tnt: deny
             ghast-fireball: deny
             mob-spawning: deny
             enderdragon-block-damage: deny

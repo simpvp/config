@@ -101,7 +101,7 @@ oponlyCmds:
 - logblock
 - we
 - mv
-NoNewPlayers: -1
+NoNewPlayers: 5
 infoCommands:
 - command: give
   message: |
@@ -164,6 +164,9 @@ infoCommands:
 - command: hamandcheese
   message: |
     https://www.youtube.com/watch?v=jvmzSUKgf_I
+- command: capybara
+  message: |
+    https://www.youtube.com/watch?v=C7xyoPqYkYM
 - command: help
   message: |
     /kill - §6Commits suicide§r

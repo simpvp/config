@@ -12,7 +12,7 @@
 
 use-display-name-in-quit-message: false
 verbose: false
-config-version: 23
+config-version: 24
 settings:
   lag-compensate-block-breaking: true
   send-full-pos-for-hard-colliding-entities: true
@@ -237,8 +237,27 @@ world-settings:
       MinimumTicks: 100
       MaximumTicks: 600
     despawn-ranges:
-      soft: 32
-      hard: 128
+      monster:
+        soft: 32
+        hard: 128
+      creature:
+        soft: 32
+        hard: 128
+      ambient:
+        soft: 32
+        hard: 128
+      underground_water_creature:
+        soft: 32
+        hard: 128
+      water_creature:
+        soft: 32
+        hard: 128
+      water_ambient:
+        soft: 32
+        hard: 64
+      misc:
+        soft: 32
+        hard: 128
     lightning-strike-distance-limit:
       sound: -1
       impact-sound: -1
@@ -256,6 +275,7 @@ world-settings:
       refresh-min: 12h
       refresh-max: 2d
     hopper:
+      ignore-occluding-blocks: true
       cooldown-when-full: true
       disable-move-event: true
     anti-xray:
@@ -323,10 +343,11 @@ world-settings:
         wither: true
         wither-skeleton: true
     spawn-limits:
-      monsters: -1
-      animals: -1
-      water-animals: -1
-      water-ambient: -1
+      monster: -1
+      creature: -1
+      underground_water_creature: -1
+      water_creature: -1
+      water_ambient: -1
       ambient: -1
     tick-rates:
       sensor:

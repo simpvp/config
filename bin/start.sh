@@ -4,6 +4,13 @@ set -euo pipefail
 # Server will not automatically restart within this many seconds of already restarting
 RESTART_LIMIT=60
 
+SCRIPT_DIR=$(readlink -f $(dirname "$0"))
+PWD=$(pwd)
+if [[ "$SCRIPT_DIR" != "$PWD/bin" ]]; then
+	echo "This script must be run from the root of the server's directory" >/dev/stderr
+	exit 1
+fi
+
 while true
 do
 	TIME=$(date -u +%s)
@@ -16,7 +23,7 @@ do
 
 	echo -n "$PPID" > ./lock
 
-	./paper.sh || true
+	./bin/bwrap.sh || true
 
 
 	LOCK=$(< ./lock)

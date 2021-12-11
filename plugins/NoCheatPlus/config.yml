@@ -58,10 +58,6 @@ protection:
       commands:
       - op
       - deop
-  clients:
-    motd:
-      active: false
-      allowall: false
 checks:
   active: true
   lag: true
@@ -156,6 +152,9 @@ checks:
     preventmisc:
       boatsanywhere: true
     scaffold:
+      improbable:
+        feedonly: false
+        weight: 0.4
       active: default
       angle: true
       sprint: true
@@ -296,6 +295,11 @@ checks:
         maximum: 2000
       improbable: true
   fight:
+    impossiblehit:
+      active: default
+      improbable:
+        weight: 0.05
+      actions: cancel vl>3 cancel log:impossiblehit:0:5:if
     active: default
     maxloopletencyticks: 8
     canceldead: false
@@ -410,18 +414,31 @@ checks:
       duplication:
         fallingblockendportal: true
     inventorymove:
+      hdistdivisor: 4
+      improbable:
+        feedonly: false
+        weight: 2.0
       active: default
       disable_creative: true
-      hdist_leniency: 0.09
-      hdist_min: 0.19
       actions: cancel vl> 5 log:inventorymove:4:5:i cancel
   moving:
+    trace:
+      maxage: 30
+      maxsize: 30
     active: default
     creativefly:
       active: true
       ignoreallowflight: false
       ignorecreative: false
       model:
+        riptiding:
+          horizontal:
+            speed: 700
+          vertical:
+            ascend:
+              speed: 600
+            maxheight: 128
+          modifiers: false
         creative:
           horizontal:
             speed: 100
@@ -511,6 +528,7 @@ checks:
     survivalfly:
       active: true
       extended:
+        noslow: true
         horizontal-accounting: true
         reset-activeitem: true
         vertical-accounting: true
@@ -573,6 +591,9 @@ checks:
       illegalplayermove: Illegal move.
       illegalvehiclemove: Illegal vehicle move.
   net:
+    moving:
+      active: default
+      actions: cancel vl>17 cancel log:moving:10:15:i
     active: default
     attackfrequency:
       active: true
@@ -613,6 +634,8 @@ checks:
       active: default
       actions: cancel log:wrongturn:0:15:icf cmdc:kickillegalrotations:0:10
 strings:
+  impossiblehit: '&c[player]&7 failed &c[check]&7: tried to hit an entity while performing another action (Tags: &6[tags]&7) &7(&cVL[violations]&7)'
+  moving: '&c[player]&7 failed &c[check]&7: tried to send improbable position updates &7(&cVL[violations]&7)'
   against: '&c[player]&7 failed &c[check]&7: tried to place a block against liquid blocks or air as if they were solid &7(&cVL[violations]&7)'
   creativefly: '&c[player]&7 failed &c[check]&7: performed a move that deviates from the model (Model: &6[model]&7, Tags: &6[tags]&7) &7(&cVL[violations]&7)'
   fdirectionlowvl: '&c[player]&7 failed &c[check]&7: could be using an aimbot (hit not canceled) &7(&cVL[violations]&7)'
@@ -741,6 +764,8 @@ compatibility:
     cbreflect:
       enable: true
   blocks:
+    blockcache:
+      minimalworldy: 0
     breakingtime:
       IRON_BLOCK:PICKAXE:DIAMOND:12: 1139
     allowinstantbreak: []
