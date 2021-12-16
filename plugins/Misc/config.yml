@@ -101,7 +101,7 @@ oponlyCmds:
 - logblock
 - we
 - mv
-NoNewPlayers: 5
+NoNewPlayers: -1
 infoCommands:
 - command: give
   message: |
