@@ -1,7 +1,5 @@
 # The world the jail is in
 world: pvp
-
-# The two corners of the jail. Jail will be a cube inside these two corners
 corner1:
   x: -200
   y: 0
@@ -10,23 +8,19 @@ corner2:
   x: 200
   y: 255
   z: 200
-
-# The point at which jailed players will be teleported to
 spawn:
   x: -100
-  y: 100
-  z: 100
-
+  y: 49
+  z: 116
 blocked_commands:
-  - me
-  - world
-  - op
-  - event
-  - kill
-  - age
-  - requestrestart
-  - cancelrestart
-  - tps
-
-geoipDatabase: "/usr/share/GeoIP"
-
+- me
+- world
+- op
+- event
+- kill
+- age
+- requestrestart
+- cancelrestart
+- tps
+geoipDatabase: /usr/share/GeoIP
+novpns: 500
