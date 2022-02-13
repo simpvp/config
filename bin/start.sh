@@ -26,17 +26,13 @@ get_lock() {
 delete_lock() {
 	LOCK=$(< ./lock) || return 0
 	if [[ "$LOCK" == "$PPID" ]]; then
-		rm ./lock
+		rm -v ./lock
 	else
 		echo "Unable to delete lockfile. Got $LOCK != $PPID"
 		return 1
 	fi
 }
-
-exit() {
-	delete_lock
-}
-trap exit EXIT
+trap delete_lock EXIT
 
 SCRIPT_DIR=$(readlink -f $(dirname "$0"))
 PWD=$(pwd)
