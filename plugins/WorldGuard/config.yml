@@ -27,6 +27,7 @@ regions:
     location-flags-only-inside-regions: false
     disable-bypass-by-default: false
     announce-bypass-status: false
+    set-parent-on-claim: ''
 auto-invincible: false
 use-player-move-event: true
 host-keys: {}
@@ -152,6 +153,7 @@ dynamics:
     snow-fall-blocks: []
     disable-crop-growth: false
     disable-coral-block-fade: false
+    disable-rock-growth: false
 blacklist:
     use-as-whitelist: false
     logging:

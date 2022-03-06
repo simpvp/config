@@ -28,7 +28,6 @@ settings:
   region-file-cache-size: 256
   save-empty-scoreboard-teams: false
   incoming-packet-spam-threshold: 300
-  save-player-data: true
   use-versioned-world: false
   queue-light-updates-max-loss: 10
   suggest-player-names-when-null-tab-completions: true
@@ -55,9 +54,10 @@ settings:
     enable: true
     threads: -1
   unsupported-settings:
+    perform-username-validation: true
     allow-headless-pistons: true
     allow-permanent-block-break-exploits: true
-    allow-piston-duplication: false
+    allow-piston-duplication: true
     allow-headless-pistons-readme: This setting controls if players should be able
       to create headless pistons.
     allow-permanent-block-break-exploits-readme: This setting controls if players
@@ -162,7 +162,7 @@ world-settings:
     portal-search-radius: 128
     optimize-explosions: true
     fire-physics-event-for-redstone: false
-    use-vanilla-world-scoreboard-name-coloring: false
+    use-vanilla-world-scoreboard-name-coloring: true
     delay-chunk-unloads-by: 10s
     max-auto-save-chunks-per-tick: 8
     save-queue-limit-for-auto-save: 50

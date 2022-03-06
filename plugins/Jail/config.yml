@@ -23,4 +23,4 @@ blocked_commands:
 - cancelrestart
 - tps
 geoipDatabase: /usr/share/GeoIP
-novpns: 500
+novpns: 3
