@@ -19,6 +19,7 @@ settings:
   permissions-file: permissions.yml
   update-folder: update
   plugin-profiling: false
+  world-container: worlds
   connection-throttle: 4000
   query-plugins: false
   deprecated-verbose: default
