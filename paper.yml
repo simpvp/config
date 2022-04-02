@@ -171,7 +171,7 @@ world-settings:
     experience-merge-max-value: -1
     max-chunk-sends-per-tick: 81
     max-chunk-gens-per-tick: 10
-    prevent-moving-into-unloaded-chunks: true
+    prevent-moving-into-unloaded-chunks: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     filter-nbt-data-from-spawn-eggs-and-related: true
