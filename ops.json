@@ -28,5 +28,17 @@
     "name": "MoWobbler",
     "level": 4,
     "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "96d049c3-7021-4362-81ef-196f2ae23d05",
+    "name": "clipchip",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "bb856796-8fb9-49ce-9727-c17e003e257d",
+    "name": "ostrich1414",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]
