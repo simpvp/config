@@ -39,7 +39,6 @@ disabledCmds:
 - gamerule
 - weather
 - toggledownfall
-- op
 - spawnpoint
 - restart
 - offline
@@ -182,6 +181,8 @@ infoCommands:
   message: §aWe do not have any /tp command here. If you need to go somewhere, you'll
     have to walk.
   ignoreOps: true
+- command: 'off'
+  message: You're funny.
 serverListMessages:
 - Hey everyone
 - tomato soop
@@ -191,3 +192,6 @@ serverListMessages:
 - events???
 - ham samdwich
 - We love capybaras
+- sell wool
+- Started April 23rd, 2011
+- went
