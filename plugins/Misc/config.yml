@@ -1,4 +1,4 @@
-announcement: ''
+announcement: 'There will be a temporary map beginning June 25: https://simplicitypvp.net/forum/viewtopic.php?t=2952'
 motd: |2
        Welcome to §6§lhttp://simpvp.net/
 
@@ -183,6 +183,8 @@ infoCommands:
   ignoreOps: true
 - command: 'off'
   message: You're funny.
+- command: cat
+  message: https://www.youtube.com/watch?v=Rhe5D6sRwzo
 serverListMessages:
 - Hey everyone
 - tomato soop

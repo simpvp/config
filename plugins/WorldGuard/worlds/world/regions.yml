@@ -86,9 +86,9 @@ regions:
         min: {x: -4026, y: 0, z: 3973}
         max: {x: -3974, y: 264, z: 4025}
         members: {}
-        flags: {other-explosion: deny, lightning: deny, wither-damage: deny, creeper-explosion: deny,
+        flags: {lightning: deny, other-explosion: deny, wither-damage: deny, creeper-explosion: deny,
             vehicle-place: deny, water-flow: deny, passthrough: deny, enderman-grief: deny,
-            tnt: deny, lava-flow: deny, pistons: deny, fire-spread: deny}
+            lava-flow: deny, pistons: deny, tnt: deny, fire-spread: deny}
         owners: {}
         type: cuboid
         priority: 0
@@ -134,8 +134,8 @@ regions:
         members: {}
         flags:
             creeper-explosion: deny
-            use: deny
             blocked-cmds: [/world]
+            use: deny
             mob-damage: deny
             vehicle-destroy: allow
             enderman-grief: deny
