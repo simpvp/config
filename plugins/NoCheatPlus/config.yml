@@ -43,7 +43,9 @@ protection:
     hide:
       active: false
       nopermission:
-        message: '&cI''m sorry, but you do not have permission to perform this command. Please contact the server administrators if you believe that this is in error.'
+        message: '&cI''m sorry, but you do not have permission to perform this command.
+          Please contact the server administrators if you believe that this is in
+          error.'
         commands:
         - plugins
         - version
@@ -54,7 +56,8 @@ protection:
   commands:
     consoleonly:
       active: false
-      message: '&cI''m sorry, but this command can''t be executed in chat. Use the console instead!'
+      message: '&cI''m sorry, but this command can''t be executed in chat. Use the
+        console instead!'
       commands:
       - op
       - deop
@@ -200,13 +203,16 @@ checks:
           factor: 0.9
           weight: 6
           level: 160
-          actions: cmd:tellchatnormal vl>7 log:chatnormal:0:5:f cmd:tellchatnormal vl>20 log:chatnormal:0:5:cf cmd:kickchatnormal vl>40 log:chatnormal:0:5:cf cmd:kickchat5
+          actions: cmd:tellchatnormal vl>7 log:chatnormal:0:5:f cmd:tellchatnormal
+            vl>20 log:chatnormal:0:5:cf cmd:kickchatnormal vl>40 log:chatnormal:0:5:cf
+            cmd:kickchat5
         shortterm:
           minimum: 2.0
           factor: 0.7
           weight: 3.0
           level: 20.0
-          actions: log:chatfast:0:5:cf cmd:kickchatfast vl>20 log:chatfast:0:5:cf cmd:kickchat1 vl>40 log:chatfast:0:5:cf cmd:kickchat5
+          actions: log:chatfast:0:5:cf cmd:kickchatfast vl>20 log:chatfast:0:5:cf
+            cmd:kickchat1 vl>40 log:chatfast:0:5:cf cmd:kickchat5
       message:
         lettercount: 1.0
         partition: 1.0
@@ -249,7 +255,8 @@ checks:
       active: false
       timeout: 5000
       warning:
-        message: '&cYou relogged really fast! If you keep doing that, you''re going to be banned.'
+        message: '&cYou relogged really fast! If you keep doing that, you''re going
+          to be banned.'
         number: 1
         timeout: 60000
       kickmessage: Too fast re-login, try with a little delay.
@@ -634,13 +641,20 @@ checks:
       active: default
       actions: cancel log:wrongturn:0:15:icf cmdc:kickillegalrotations:0:10
 strings:
-  impossiblehit: '&c[player]&7 failed &c[check]&7: tried to hit an entity while performing another action (Tags: &6[tags]&7) &7(&cVL[violations]&7)'
-  moving: '&c[player]&7 failed &c[check]&7: tried to send improbable position updates &7(&cVL[violations]&7)'
-  against: '&c[player]&7 failed &c[check]&7: tried to place a block against liquid blocks or air as if they were solid &7(&cVL[violations]&7)'
-  creativefly: '&c[player]&7 failed &c[check]&7: performed a move that deviates from the model (Model: &6[model]&7, Tags: &6[tags]&7) &7(&cVL[violations]&7)'
-  fdirectionlowvl: '&c[player]&7 failed &c[check]&7: could be using an aimbot (hit not canceled) &7(&cVL[violations]&7)'
-  flyingfrequency: '&c[player]&7 failed &c[check]&7: is manipulating packets sent to the server to gain an unfair advantage &7(&cVL[violations]&7)'
-  inventorymove: '&c[player]&7 failed &c[check]&7: tried to click in their inventory while simultaneously performing another action (Tags: &6[tags]&7) &7(&cVL[violations]&7)'
+  impossiblehit: '&c[player]&7 failed &c[check]&7: tried to hit an entity while performing
+    another action (Tags: &6[tags]&7) &7(&cVL[violations]&7)'
+  moving: '&c[player]&7 failed &c[check]&7: tried to send improbable position updates
+    &7(&cVL[violations]&7)'
+  against: '&c[player]&7 failed &c[check]&7: tried to place a block against liquid
+    blocks or air as if they were solid &7(&cVL[violations]&7)'
+  creativefly: '&c[player]&7 failed &c[check]&7: performed a move that deviates from
+    the model (Model: &6[model]&7, Tags: &6[tags]&7) &7(&cVL[violations]&7)'
+  fdirectionlowvl: '&c[player]&7 failed &c[check]&7: could be using an aimbot (hit
+    not canceled) &7(&cVL[violations]&7)'
+  flyingfrequency: '&c[player]&7 failed &c[check]&7: is manipulating packets sent
+    to the server to gain an unfair advantage &7(&cVL[violations]&7)'
+  inventorymove: '&c[player]&7 failed &c[check]&7: tried to click in their inventory
+    while simultaneously performing another action (Tags: &6[tags]&7) &7(&cVL[violations]&7)'
   kickagainst: ncp kick [player] &c&l(!)&7 Invalid block placements.
   kickbow: ncp kick [player] &c&l(!)&7 Shooting arrows too quickly.
   kickcritical: ncp kick [player] &c&l(!)&7 Incorrect movements (Critical cheats?)
@@ -656,12 +670,17 @@ strings:
   kickscaffold: ncp kick [player] &c&l(!)&7 Unnatural block placements.
   kicksuspiciouscombat: ncp kick [player] &c&l(!)&7 Illegal combat modifications.
   kickvehiclefly: ncp kick [player] &c&l(!)&7 Unexpected vehicle movement.
-  freachhighvl: '&c[player]&7 failed &c[check]&7: is most likely using a killaura cheat (Reach: &6[reachdistance]&7) &7(&cVL[violations]&7)'
-  pitchpattern: '&c[player]&7 failed &c[check]&7: has pitch rotation patterns that are often associated with cheats &7(&cVL[violations]&7)'
-  scaffold: '&c[player]&7 failed &c[check]&7: tried to place a block in an unnatural way (Tags: &6[tags]&7) &7(&cVL[violations]&7)'
+  freachhighvl: '&c[player]&7 failed &c[check]&7: is most likely using a killaura
+    cheat (Reach: &6[reachdistance]&7) &7(&cVL[violations]&7)'
+  pitchpattern: '&c[player]&7 failed &c[check]&7: has pitch rotation patterns that
+    are often associated with cheats &7(&cVL[violations]&7)'
+  scaffold: '&c[player]&7 failed &c[check]&7: tried to place a block in an unnatural
+    way (Tags: &6[tags]&7) &7(&cVL[violations]&7)'
   survivalfly: '&c[player]&7 failed &c[check]&7: tried to move unexpectedly &7(&cVL[violations]&7)'
-  survivalflyhighvl: '&c[player]&7 failed &c[check]&7: tried to perform an illegal move (Subchecks: &6[tags]&7) &7(&cVL[violations]&7)'
-  wrongturn: '&c[player]&7 failed &c[check]&7: sent an impossible pitch rotation (&6>90 &7or&6 <-90&7) &7(&cVL[violations]&7)'
+  survivalflyhighvl: '&c[player]&7 failed &c[check]&7: tried to perform an illegal
+    move (Subchecks: &6[tags]&7) &7(&cVL[violations]&7)'
+  wrongturn: '&c[player]&7 failed &c[check]&7: sent an impossible pitch rotation (&6>90
+    &7or&6 <-90&7) &7(&cVL[violations]&7)'
   clearimprobable: ncp removeplayer [player] COMBINED_IMPROBABLE
   clearcritical: ncp removeplayer [player] FIGHT_CRITICAL
   clearsf: ncp removeplayer [player] MOVING_SURVIVALFLY
@@ -669,16 +688,22 @@ strings:
   clearpassable: ncp removeplayer [player] MOVING_PASSABLE
   clearvehicle: ncp removeplayer [player] MOVING_VEHICLE_ENVELOPE
   clearscaffold: ncp removeplayer [player] BLOCKPLACE_SCAFFOLD
-  angle: '[player] failed [check]: tried to hit multiple entities at the same time. VL [violations].'
-  attackfrequency: '[player] failed [check]: attacks with too high a frequency ([packets]/[limit], [tags]). VL [violations].'
+  angle: '[player] failed [check]: tried to hit multiple entities at the same time.
+    VL [violations].'
+  attackfrequency: '[player] failed [check]: attacks with too high a frequency ([packets]/[limit],
+    [tags]). VL [violations].'
   ban: ban [player]
   ban-ip: ban-ip [ip]
   bautosign: '[player] failed [check]: failed autosign with [tags]. VL [violations].'
-  bbfrequency: '[player] failed [check]: tried to break too many blocks within time frame. VL [violations].'
-  bdirection: '[player] failed [check]: tried to interact with a block out of their line of sight. VL [violations].'
-  bedleave: '[player] failed [check]: sends bed leave packets (was not in bed). VL [violations].'
+  bbfrequency: '[player] failed [check]: tried to break too many blocks within time
+    frame. VL [violations].'
+  bdirection: '[player] failed [check]: tried to interact with a block out of their
+    line of sight. VL [violations].'
+  bedleave: '[player] failed [check]: sends bed leave packets (was not in bed). VL
+    [violations].'
   bpspeed: '[player] failed [check]: tried to throw projectiles too quickly. VL [violations].'
-  breach: '[player] failed [check]: exceeds block-interact distance ([reachdistance]). VL [violations].'
+  breach: '[player] failed [check]: exceeds block-interact distance ([reachdistance]).
+    VL [violations].'
   bspeed: '[player] failed [check]: interacts too fast. VL [violations].'
   bvisible: '[player] failed [check]: interacts with a block out of sight. VL [violations].'
   bwrong: '[player] failed [check]: broke another block than clicked. VL [violations].'
@@ -686,28 +711,38 @@ strings:
   chatnormal: '[player] failed [check]: potentially annoying chat. VL [violations].'
   color: '[player] failed [check]: sent colored chat message. VL [violations].'
   commands: '[player] failed [check]: issued too many commands. VL [violations].'
-  combspeed: '[player] failed [check]: performs different actions at very high speed. VL [violations].'
-  critical: '[player] failed [check]: tried to do a critical hit but wasn''t technically jumping [tags]. VL [violations].'
+  combspeed: '[player] failed [check]: performs different actions at very high speed.
+    VL [violations].'
+  critical: '[player] failed [check]: tried to do a critical hit but wasn''t technically
+    jumping [tags]. VL [violations].'
   drop: '[player] failed [check]: tried to drop more items than allowed. VL [violations].'
   dropkick: ncp delay ncp kick [player] Dropping items too fast.
-  fastbreak: '[player] failed [check]: tried to break blocks ([blockid]) faster than possible. VL [violations].'
-  fastclick: '[player] failed [check]: tried to move items in their inventory too quickly. VL [violations].'
+  fastbreak: '[player] failed [check]: tried to break blocks ([blockid]) faster than
+    possible. VL [violations].'
+  fastclick: '[player] failed [check]: tried to move items in their inventory too
+    quickly. VL [violations].'
   fastconsume: '[player] failed [check]: consumes [food] [tags] too fast. VL [violations].'
   fastheal: '[player] failed [check]: regenerates health faster than usual. VL [violations].'
   fastplace: '[player] failed [check]: tried to place too many blocks. VL [violations].'
-  fdirection: '[player] failed [check]: tried to hit an entity out of line of sight. VL [violations].'
+  fdirection: '[player] failed [check]: tried to hit an entity out of line of sight.
+    VL [violations].'
   flyshort: '[player] failed [check]: tried to move unexpectedly. VL [violations].'
-  flylong: '[player] failed [check]: tried to move: [locationfrom] -> [locationto], d=[distance] ([tags]). VL [violations].'
-  flyfile: '[player] failed [check]: tried to move: [locationfrom] -> [locationto], d=[distance] ([tags]). VL [violations].'
+  flylong: '[player] failed [check]: tried to move: [locationfrom] -> [locationto],
+    d=[distance] ([tags]). VL [violations].'
+  flyfile: '[player] failed [check]: tried to move: [locationfrom] -> [locationto],
+    d=[distance] ([tags]). VL [violations].'
   freach: '[player] failed [check]: tried to attack entity out of reach. VL [violations].'
   fselfhit: '[player] failed [check]: tried to self-hit. VL [violations].'
-  fspeed: '[player] failed [check]: tried to attack with too high a frequency. VL [violations].'
+  fspeed: '[player] failed [check]: tried to attack with too high a frequency. VL
+    [violations].'
   gutenberg: '[player] failed [check]: created a book with too many pages. VL [violations].'
   godmode: '[player] failed [check]: avoided taking damage or lagging. VL [violations].'
-  improbable: '[player] failed [check]: meets the improbable more than expected. VL [violations].'
+  improbable: '[player] failed [check]: meets the improbable more than expected. VL
+    [violations].'
   instantbow: '[player] failed [check]: fires bow too fast. VL [violations].'
   instanteat: '[player] failed [check]: eats food [food] too fast. VL [violations].'
-  keepalive: '[player] failed [check]: spams keep-alive packets (god/freecam?). VL [violations].'
+  keepalive: '[player] failed [check]: spams keep-alive packets (god/freecam?). VL
+    [violations].'
   kick: kick [player]
   kickalive: ncp kick [player] Too many keep-alive packets.
   kickattackfrequency: ncp kick [player] Unlikely fast clicking.
@@ -727,19 +762,23 @@ strings:
   kickpackets: ncp delay ncp kick [player] Too many packets (extreme lag?)
   kickselfhit: ncp kick [player] You tried to hit yourself!
   kickwb: ncp kick [player] Block breaking out of sync!
-  knockback: '[player] failed [check]: tried to do a knockback but wasn''t technically sprinting. VL [violations].'
-  morepackets: '[player] failed [check]: sent too many moves ([packets] [tags]). VL [violations].'
+  knockback: '[player] failed [check]: tried to do a knockback but wasn''t technically
+    sprinting. VL [violations].'
+  morepackets: '[player] failed [check]: sent too many moves ([packets] [tags]). VL
+    [violations].'
   msgtempdenylogin: You are temporarily denied to join this server.
   munchhausen: '[player] failed [check]: almost made it off the pit. VL [violations].'
   nofall: '[player] failed [check]: tried to alter fall damage ([tags]). VL [violations].'
   chatfast: '[player] failed [check]: acted like spamming (IP: [ip]). VL [violations].'
   noswing: '[player] failed [check]: didn''t swing arm. VL [violations].'
-  passable: '[player] failed [check]: moved into a block ([blockid]) from [locationfrom] to [locationto] distance [distance] . VL [violations].'
+  passable: '[player] failed [check]: moved into a block ([blockid]) from [locationfrom]
+    to [locationto] distance [distance] . VL [violations].'
   relog: '[player] failed [check]: relogs too fast. VL [violations].'
   tellchatnormal: 'ncp tell [player] &cNCP: &eToo many messages, slow down...'
   tempkick1: ncp tempkick [player] 1 Wait a minute!
   tempkick5: ncp tempkick [player] 5 You have five minutes to think about it!
-  vehicleenvelope: '[player] failed [check]: moved a vehicle too fast ([tags]). VL [violations].'
+  vehicleenvelope: '[player] failed [check]: moved a vehicle too fast ([tags]). VL
+    [violations].'
 compatibility:
   exemptions:
     wildcard:
