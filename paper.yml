@@ -106,7 +106,7 @@ settings:
       PacketPlayInAutoRecipe:
         interval: 4.0
         max-packet-rate: 5.0
-        action: DROP
+        action: NONE
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
