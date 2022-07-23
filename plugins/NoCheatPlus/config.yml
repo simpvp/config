@@ -181,9 +181,6 @@ checks:
       success: '&aOK, it sounds like you''re not a spambot.'
       tries: 3
       actions: cmd:kickcaptcha vl>4 log:captcha:2:5:cf cmd:kickcaptcha
-    color:
-      active: false
-      actions: log:color:0:1:if
     commands:
       active: false
       exclusions: []
@@ -270,9 +267,6 @@ checks:
       kickmessage: Too many people logging in, retry soon.
   combined:
     active: default
-    bedleave:
-      active: false
-      actions: log:bedleave:0:5:if cmd:kickbedleave
     enderpearl:
       active: true
       preventclickblock: true
@@ -372,11 +366,6 @@ checks:
         weight: 2.0
   inventory:
     active: default
-    drop:
-      active: true
-      limit: 100
-      timeframe: 20
-      actions: log:drop:0:1:cif
     fastclick:
       exclude:
       - Inventory Name Here
@@ -535,6 +524,7 @@ checks:
     survivalfly:
       active: true
       extended:
+        step-accounting: true
         noslow: true
         horizontal-accounting: true
         reset-activeitem: true

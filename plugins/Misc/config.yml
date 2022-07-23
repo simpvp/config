@@ -7,6 +7,7 @@ disableCancelRestart:
 - 47f829c3-7c83-4ce2-87c1-a3e3299f5126
 - 15247f8c-54ab-4315-9d08-7ae17395a4c5
 - dabec769-9e12-4680-81bf-833e691e71dd
+- ee0f6a65-cff9-4527-b7be-1eeb9f240e4a
 simpvpHostnameChecker: true
 disableElderGuardians:
 - world
@@ -181,19 +182,23 @@ infoCommands:
   message: §aWe do not have any /tp command here. If you need to go somewhere, you'll
     have to walk.
   ignoreOps: true
+- command: patreon
+  message: https://www.patreon.com/simpvp
 - command: 'off'
   message: You're funny.
 - command: cat
   message: https://www.youtube.com/watch?v=Rhe5D6sRwzo
+- command: downtime
+  message: down 00:00
 serverListMessages:
 - Hey everyone
-- tomato soop
+- '&ctomato soop'
 - wb
-- oatmeal1414
-- cactus
-- events???
-- ham samdwich
-- We love capybaras
-- sell wool
-- Started April 23rd, 2011
-- went
+- '&2cactus'
+- '&5events???'
+- '&cham samdwich'
+- '&7We love capybaras'
+- '&6Now on 1.18.2'
+- '&0went'
+- '&9sell wool'
+- '&aStarted April 23rd, 2011'
