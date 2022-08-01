@@ -44,7 +44,7 @@ regions:
         priority: 5
     innerspawn:
         min: {x: -30, y: 0, z: -30}
-        max: {x: 30, y: 255, z: 30}
+        max: {x: 30, y: 320, z: 30}
         members: {}
         flags: {}
         owners: {}
