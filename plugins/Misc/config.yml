@@ -1,4 +1,5 @@
-announcement: ''
+announcement: 'Please consider donating to the server''s patreon to help cover costs:
+  https://www.patreon.com/simpvp'
 motd: |2
        Welcome to §6§lhttp://simpvp.net/
 
@@ -18,6 +19,7 @@ logNonPlayerCmds: true
 disabledCmds:
 - about
 - deop
+- op
 - resetdeathban
 - version
 - icanhasbukkit
