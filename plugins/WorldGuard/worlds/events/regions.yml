@@ -62,7 +62,7 @@ regions:
         min: {x: 81, y: 54, z: 318}
         max: {x: 166, y: 94, z: 380}
         members: {}
-        flags: {chest-access: allow, pvp: allow}
+        flags: {pvp: allow, chest-access: allow}
         owners: {}
         type: cuboid
         priority: 2
@@ -98,22 +98,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
-    sand-jump-event-interact:
-        min: {x: 789, y: 13, z: 313}
-        max: {x: 796, y: 14, z: 314}
-        members: {}
-        flags: {use: allow}
-        owners: {}
-        type: cuboid
-        priority: 0
-    deathmatch_spawn:
-        min: {x: 79, y: 153, z: 520}
-        max: {x: 119, y: 156, z: 553}
-        members: {}
-        flags: {use: allow}
-        owners: {}
-        type: cuboid
-        priority: 0
     cactus_items:
         min: {x: -249, y: 63, z: -113}
         max: {x: -245, y: 68, z: -109}
@@ -122,6 +106,22 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    deathmatch_spawn:
+        min: {x: 79, y: 153, z: 520}
+        max: {x: 119, y: 156, z: 553}
+        members: {}
+        flags: {use: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    sand-jump-event-interact:
+        min: {x: 789, y: 13, z: 313}
+        max: {x: 796, y: 14, z: 314}
+        members: {}
+        flags: {use: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
     battleship-red-cannon2:
         min: {x: 32, y: 69, z: 348}
         max: {x: 35, y: 70, z: 350}
@@ -138,14 +138,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 3
-    pianictf_pressureplates:
-        min: {x: -57, y: 87, z: -109}
-        max: {x: -38, y: 90, z: -91}
-        members: {}
-        flags: {use: allow}
-        owners: {}
-        type: cuboid
-        priority: 0
     battleship-red-cannon4:
         min: {x: 31, y: 69, z: 368}
         max: {x: 34, y: 70, z: 370}
@@ -154,11 +146,19 @@ regions:
         owners: {}
         type: cuboid
         priority: 3
+    pianictf_pressureplates:
+        min: {x: -57, y: 87, z: -109}
+        max: {x: -38, y: 90, z: -91}
+        members: {}
+        flags: {use: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
     mobwave_start:
         min: {x: 49, y: 93, z: 71}
         max: {x: 70, y: 107, z: 95}
         members: {}
-        flags: {use: allow, chest-access: allow, pvp: deny}
+        flags: {use: allow, pvp: deny, chest-access: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -200,7 +200,7 @@ regions:
         max: {x: -348, y: 97, z: -313}
         members: {}
         flags: {enderpearl: allow, other-explosion: allow, build: allow, use: allow,
-            lighter: allow, pistons: allow, tnt: allow, pvp: allow, chest-access: allow,
+            lighter: allow, pistons: allow, pvp: allow, chest-access: allow, tnt: allow,
             fire-spread: allow}
         owners: {}
         type: cuboid
@@ -267,7 +267,7 @@ regions:
         min: {x: 192, y: 64, z: -31}
         max: {x: 196, y: 69, z: -27}
         members: {}
-        flags: {use: allow, interact: allow, vehicle-destroy: allow}
+        flags: {use: allow, vehicle-destroy: allow, interact: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -291,9 +291,9 @@ regions:
         min: {x: 238, y: 1, z: -1198}
         max: {x: 435, y: 252, z: -1001}
         members: {}
-        flags: {sleep: deny, item-drop: allow, creeper-explosion: allow, lava-fire: allow,
-            build: allow, use: allow, mob-damage: allow, interact: allow, pvp: allow,
-            chest-access: allow, mob-spawning: allow, fire-spread: allow}
+        flags: {lava-fire: allow, use: allow, interact: allow, chest-access: allow,
+            pvp: allow, mob-spawning: allow, fire-spread: allow, sleep: deny, item-drop: allow,
+            creeper-explosion: allow, build: allow, mob-damage: allow, tnt: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -310,19 +310,11 @@ regions:
         max: {x: 313, y: 103, z: 1185}
         members: {}
         flags: {sleep: deny, exit: deny, vehicle-place: allow, build: allow, use: allow,
-            mob-damage: allow, vehicle-destroy: allow, tnt: allow, chest-access: allow,
-            lava-flow: allow, mob-spawning: allow, fire-spread: allow}
+            mob-damage: allow, vehicle-destroy: allow, chest-access: allow, lava-flow: allow,
+            tnt: allow, mob-spawning: allow, fire-spread: allow}
         owners: {}
         type: cuboid
         priority: 0
-    battleship-blue-cannon3:
-        min: {x: -15, y: 69, z: 344}
-        max: {x: -12, y: 70, z: 346}
-        members: {}
-        flags: {build: allow, tnt: allow}
-        owners: {}
-        type: cuboid
-        priority: 3
     ilxgend-ctf-yellow:
         min: {x: 251, y: 48, z: 799}
         max: {x: 251, y: 49, z: 799}
@@ -331,9 +323,25 @@ regions:
         owners: {}
         type: cuboid
         priority: 5
+    battleship-blue-cannon3:
+        min: {x: -15, y: 69, z: 344}
+        max: {x: -12, y: 70, z: 346}
+        members: {}
+        flags: {build: allow, tnt: allow}
+        owners: {}
+        type: cuboid
+        priority: 3
     battleship-blue-cannon4:
         min: {x: -15, y: 69, z: 336}
         max: {x: -12, y: 70, z: 338}
+        members: {}
+        flags: {build: allow, tnt: allow}
+        owners: {}
+        type: cuboid
+        priority: 3
+    battleship-blue-cannon1:
+        min: {x: -15, y: 69, z: 364}
+        max: {x: -12, y: 70, z: 366}
         members: {}
         flags: {build: allow, tnt: allow}
         owners: {}
@@ -344,14 +352,6 @@ regions:
         max: {x: 136, y: 112, z: 285}
         members: {}
         flags: {use: allow, pvp: deny}
-        owners: {}
-        type: cuboid
-        priority: 3
-    battleship-blue-cannon1:
-        min: {x: -15, y: 69, z: 364}
-        max: {x: -12, y: 70, z: 366}
-        members: {}
-        flags: {build: allow, tnt: allow}
         owners: {}
         type: cuboid
         priority: 3
@@ -375,7 +375,7 @@ regions:
         min: {x: -603, y: 55, z: 11}
         max: {x: -589, y: 61, z: 24}
         members: {}
-        flags: {use: allow, chest-access: allow, pvp: allow}
+        flags: {use: allow, pvp: allow, chest-access: allow}
         owners: {}
         type: cuboid
         priority: 3
@@ -420,14 +420,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
-    mowobbler-ctf-entire:
-        min: {x: 58, y: 33, z: 599}
-        max: {x: 281, y: 79, z: 722}
-        members: {}
-        flags: {sleep: deny, chest-access: allow, pvp: allow, mob-spawning: deny}
-        owners: {}
-        type: cuboid
-        priority: 0
     odin_inferno:
         min: {x: 172, y: 65, z: -125}
         max: {x: 234, y: 104, z: -107}
@@ -436,20 +428,21 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    mowobbler-ctf-entire:
+        min: {x: 58, y: 33, z: 599}
+        max: {x: 281, y: 79, z: 722}
+        members: {}
+        flags: {sleep: deny, creeper-explosion: allow, pvp: allow, chest-access: allow,
+            mob-spawning: allow, fire-spread: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
     torture:
         min: {x: -270, y: 63, z: 348}
         max: {x: -254, y: 79, z: 364}
         members: {}
         flags: {creeper-explosion: allow, mob-damage: allow, lighter: allow, damage-animals: allow,
-            tnt: allow, pvp: allow, chest-access: allow, mob-spawning: allow, block-place: allow}
-        owners: {}
-        type: cuboid
-        priority: 0
-    polynesiaaa:
-        min: {x: 306, y: 63, z: 564}
-        max: {x: 322, y: 75, z: 580}
-        members: {}
-        flags: {interact: allow, pvp: deny, mob-spawning: deny}
+            pvp: allow, chest-access: allow, tnt: allow, block-place: allow, mob-spawning: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -461,6 +454,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    polynesiaaa:
+        min: {x: 306, y: 63, z: 564}
+        max: {x: 322, y: 75, z: 580}
+        members: {}
+        flags: {interact: allow, pvp: deny, mob-spawning: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
     chunk_mining:
         min: {x: 378, y: 72, z: -77}
         max: {x: 391, y: 98, z: -64}
@@ -482,9 +483,9 @@ regions:
         min: {x: -34, y: 64, z: 320}
         max: {x: 54, y: 98, z: 385}
         members: {}
-        flags: {vehicle-place: allow, lava-fire: allow, use: allow, feed-delay: 1,
-            feed-amount: 20, vehicle-destroy: allow, tnt: allow, pvp: allow, chest-access: allow,
-            ride: allow, mob-spawning: deny, fire-spread: allow}
+        flags: {vehicle-place: allow, lava-fire: allow, use: allow, feed-amount: 20,
+            feed-delay: 1, vehicle-destroy: allow, chest-access: allow, pvp: allow,
+            tnt: allow, mob-spawning: deny, ride: allow, fire-spread: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -500,13 +501,21 @@ regions:
         min: {x: -602, y: 29, z: -25}
         max: {x: -406, y: 75, z: 61}
         members: {}
-        flags: {exit: deny, build: allow, use: allow, chest-access: allow, pvp: allow}
+        flags: {exit: deny, build: allow, use: allow, pvp: allow, chest-access: allow}
         owners: {}
         type: cuboid
         priority: 0
     zvz-team-select:
         min: {x: 14, y: 60, z: -409}
         max: {x: 14, y: 60, z: -402}
+        members: {}
+        flags: {use: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    archery-ravine-lobby:
+        min: {x: 153, y: 142, z: 110}
+        max: {x: 169, y: 143, z: 112}
         members: {}
         flags: {use: allow}
         owners: {}
@@ -520,20 +529,12 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
-    archery-ravine-lobby:
-        min: {x: 153, y: 142, z: 110}
-        max: {x: 169, y: 143, z: 112}
-        members: {}
-        flags: {use: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
     tortu:
         min: {x: 262, y: 64, z: 62}
         max: {x: 283, y: 77, z: 96}
         members: {}
-        flags: {mob-damage: allow, damage-animals: allow, pvp: allow, block-place: allow,
-            mob-spawning: allow}
+        flags: {mob-damage: allow, damage-animals: allow, pvp: allow, mob-spawning: allow,
+            block-place: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -589,9 +590,9 @@ regions:
         min: {x: 370, y: 36, z: 29}
         max: {x: 450, y: 67, z: 84}
         members: {}
-        flags: {enderpearl: allow, other-explosion: allow, natural-health-regen: deny,
-            lava-fire: allow, build: allow, use: allow, lighter: allow, tnt: allow,
-            pvp: allow, chest-access: allow, fire-spread: allow}
+        flags: {other-explosion: allow, enderpearl: allow, natural-health-regen: deny,
+            lava-fire: allow, build: allow, use: allow, lighter: allow, chest-access: allow,
+            pvp: allow, tnt: allow, fire-spread: allow}
         owners: {}
         type: cuboid
         priority: 3
@@ -599,7 +600,7 @@ regions:
         min: {x: -419, y: 55, z: 12}
         max: {x: -405, y: 61, z: 25}
         members: {}
-        flags: {use: allow, chest-access: allow, pvp: allow}
+        flags: {use: allow, pvp: allow, chest-access: allow}
         owners: {}
         type: cuboid
         priority: 3
@@ -648,8 +649,8 @@ regions:
         max: {x: 741, y: 154, z: 392}
         members: {}
         flags: {other-explosion: allow, sleep: deny, creeper-explosion: allow, build: allow,
-            use: allow, mob-damage: allow, interact: allow, tnt: allow, pvp: allow,
-            chest-access: allow, mob-spawning: allow, fire-spread: allow}
+            use: allow, mob-damage: allow, interact: allow, chest-access: allow, pvp: allow,
+            tnt: allow, mob-spawning: allow, fire-spread: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -689,7 +690,8 @@ regions:
         min: {x: 14722, y: 85, z: 14455}
         max: {x: 14772, y: 124, z: 14510}
         members: {}
-        flags: {item-drop: deny, feed-amount: 20, feed-delay: 1, pvp: deny}
+        flags: {item-drop: deny, fall-damage: deny, feed-amount: 20, feed-delay: 1,
+            pvp: deny}
         owners: {}
         type: cuboid
         priority: 0
@@ -715,7 +717,7 @@ regions:
             mob-spawning: allow
         owners: {}
         type: cuboid
-        priority: 3
+        priority: 5
     tnt-jump-buttons:
         min: {x: 524, y: 9, z: -126}
         max: {x: 530, y: 10, z: -126}
@@ -824,7 +826,7 @@ regions:
         min: {x: 288, y: 65, z: -250}
         max: {x: 298, y: 111, z: -240}
         members: {}
-        flags: {build: allow, mob-damage: allow, chest-access: allow, pvp: deny, mob-spawning: allow}
+        flags: {build: allow, mob-damage: allow, pvp: deny, chest-access: allow, mob-spawning: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -849,7 +851,7 @@ regions:
         max: {x: -248, y: 71, z: 177}
         members: {}
         flags: {heal-max-health: 20.0, feed-amount: 20, feed-delay: 1, damage-animals: allow,
-            pvp: allow, heal-amount: 3, ride: allow, heal-delay: 1}
+            pvp: allow, heal-amount: 3, heal-delay: 1, ride: allow}
         owners: {}
         type: cuboid
         priority: 3
@@ -857,8 +859,8 @@ regions:
         min: {x: -408, y: 64, z: 152}
         max: {x: -325, y: 74, z: 177}
         members: {}
-        flags: {use: allow, heal-max-health: 20.0, feed-amount: 20, feed-delay: 1,
-            damage-animals: allow, pvp: allow, heal-amount: 3, ride: allow, heal-delay: 1}
+        flags: {heal-max-health: 20.0, use: allow, feed-amount: 20, feed-delay: 1,
+            damage-animals: allow, pvp: allow, heal-amount: 3, heal-delay: 1, ride: allow}
         owners: {}
         type: cuboid
         priority: 3
@@ -908,8 +910,8 @@ regions:
         min: {x: -236, y: 66, z: 66}
         max: {x: -24, y: 70, z: 108}
         members: {}
-        flags: {use: allow, heal-max-health: 20.0, feed-amount: 20, feed-delay: 1,
-            damage-animals: allow, pvp: allow, heal-amount: 3, ride: allow, heal-delay: 1}
+        flags: {heal-max-health: 20.0, use: allow, feed-amount: 20, feed-delay: 1,
+            damage-animals: allow, pvp: allow, heal-amount: 3, heal-delay: 1, ride: allow}
         owners: {}
         type: cuboid
         priority: 3
@@ -918,7 +920,7 @@ regions:
         max: {x: -233, y: 70, z: 107}
         members: {}
         flags: {heal-max-health: 20.0, feed-amount: 20, feed-delay: 1, damage-animals: allow,
-            pvp: allow, heal-amount: 3, ride: allow, heal-delay: 1}
+            pvp: allow, heal-amount: 3, heal-delay: 1, ride: allow}
         owners: {}
         type: cuboid
         priority: 3
@@ -936,7 +938,7 @@ regions:
         max: {x: -298, y: 76, z: 116}
         members: {}
         flags: {heal-max-health: 20.0, feed-amount: 20, feed-delay: 1, damage-animals: allow,
-            pvp: allow, heal-amount: 3, ride: allow, heal-delay: 1}
+            pvp: allow, heal-amount: 3, heal-delay: 1, ride: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -952,11 +954,11 @@ regions:
         min: {x: 5024, y: 0, z: 160}
         max: {x: 5215, y: 255, z: 351}
         members: {}
-        flags: {other-explosion: allow, use: allow, lighter: allow, interact: allow,
-            enderman-grief: allow, pvp: allow, chest-access: allow, ride: deny, mob-spawning: allow,
-            fire-spread: allow, sleep: deny, entry: allow, exit: deny, creeper-explosion: allow,
-            snowman-trails: allow, build: allow, mob-damage: allow, damage-animals: allow,
-            tnt: allow}
+        flags: {other-explosion: allow, use: allow, interact: allow, lighter: allow,
+            enderman-grief: allow, chest-access: allow, pvp: allow, mob-spawning: allow,
+            ride: deny, fire-spread: allow, sleep: deny, exit: deny, entry: allow,
+            creeper-explosion: allow, snowman-trails: allow, build: allow, mob-damage: allow,
+            damage-animals: allow, tnt: allow}
         owners: {}
         type: cuboid
         priority: 2
@@ -997,8 +999,8 @@ regions:
         min: {x: 7052, y: 0, z: 7001}
         max: {x: 7232, y: 64, z: 7231}
         members: {}
-        flags: {enderpearl: allow, build: allow, use: allow, chest-access: allow,
-            pvp: allow}
+        flags: {enderpearl: allow, sleep: deny, build: allow, use: allow, pvp: allow,
+            chest-access: allow, mob-spawning: deny}
         owners: {}
         type: cuboid
         priority: 0
@@ -1047,7 +1049,7 @@ regions:
         min: {x: 18, y: 38, z: 3458}
         max: {x: 88, y: 94, z: 3577}
         members: {}
-        flags: {use: deny, interact: allow, chest-access: allow, pvp: deny, mob-spawning: deny}
+        flags: {use: deny, interact: allow, pvp: deny, chest-access: allow, mob-spawning: deny}
         owners: {}
         type: cuboid
         priority: 0
@@ -1080,9 +1082,10 @@ regions:
     __global__:
         members: {}
         flags: {other-explosion: deny, lava-fire: deny, mycelium-spread: deny, use: deny,
-            snow-fall: deny, enderman-grief: deny, pistons: allow, pvp: deny, chest-access: deny,
-            ride: allow, mob-spawning: deny, enderpearl: deny, sleep: deny, creeper-explosion: deny,
-            vine-growth: deny, build: deny, mob-damage: deny, tnt: deny}
+            snow-fall: deny, enderman-grief: deny, chest-access: deny, pistons: allow,
+            pvp: deny, mob-spawning: deny, ride: allow, enderpearl: deny, sleep: deny,
+            creeper-explosion: deny, vine-growth: deny, build: deny, mob-damage: deny,
+            tnt: deny}
         owners: {}
         type: global
         priority: 0
@@ -1200,10 +1203,10 @@ regions:
         type: cuboid
         priority: 3
     tmp:
-        min: {x: 81, y: 92, z: 215}
-        max: {x: 92, y: 96, z: 225}
+        min: {x: 0, y: 317, z: -3}
+        max: {x: 4, y: 319, z: 1}
         members: {}
-        flags: {use: allow, interact: allow}
+        flags: {use: allow, interact: allow, mob-spawning: allow}
         owners: {}
         type: cuboid
         priority: 5
@@ -1244,7 +1247,7 @@ regions:
         max: {x: 39, y: 91, z: -22}
         members: {}
         flags: {item-drop: deny, item-pickup: deny, feed-amount: 20, feed-delay: 1,
-            block-break: allow, lava-flow: deny, tnt: deny}
+            block-break: allow, tnt: deny, lava-flow: deny}
         owners: {}
         type: cuboid
         priority: 0
@@ -1349,7 +1352,7 @@ regions:
         min: {x: 791, y: 12, z: 356}
         max: {x: 845, y: 99, z: 410}
         members: {}
-        flags: {build: allow, block-break: allow, lighter: allow, tnt: allow, pvp: allow,
+        flags: {build: allow, block-break: allow, lighter: allow, pvp: allow, tnt: allow,
             fire-spread: allow}
         owners: {}
         type: cuboid
@@ -1503,9 +1506,9 @@ regions:
         flags:
             send-chat: deny
             blocked-cmds: [/me]
-            receive-chat: deny
             pistons: allow
             pvp: allow
+            receive-chat: deny
         owners: {}
         type: cuboid
         priority: 0
@@ -1595,7 +1598,7 @@ regions:
         min: {x: -108, y: 0, z: -456}
         max: {x: 12, y: 120, z: -356}
         members: {}
-        flags: {build: allow, use: allow, chest-access: allow, tnt: allow, pvp: allow}
+        flags: {build: allow, use: allow, pvp: allow, chest-access: allow, tnt: allow}
         owners: {}
         type: cuboid
         priority: 2
@@ -1635,8 +1638,8 @@ regions:
         min: {x: -181, y: 64, z: 273}
         max: {x: -167, y: 72, z: 303}
         members: {}
-        flags: {mob-damage: deny, interact: allow, pvp: deny, ride: allow, mob-spawning: deny,
-            block-place: allow}
+        flags: {mob-damage: deny, interact: allow, pvp: deny, block-place: allow,
+            ride: allow, mob-spawning: deny}
         owners: {}
         type: cuboid
         priority: 0
@@ -1644,8 +1647,8 @@ regions:
         min: {x: 782, y: 0, z: 259}
         max: {x: 796, y: 29, z: 307}
         members: {}
-        flags: {feed-amount: 1, feed-delay: 1, heal-amount: 1, block-place: allow,
-            heal-delay: 1, natural-hunger-drain: deny}
+        flags: {feed-amount: 1, feed-delay: 1, heal-amount: 1, heal-delay: 1, block-place: allow,
+            natural-hunger-drain: deny}
         owners: {}
         type: cuboid
         priority: 0
@@ -1754,7 +1757,7 @@ regions:
         min: {x: -1045, y: 68, z: -2601}
         max: {x: -990, y: 91, z: -2553}
         members: {}
-        flags: {fall-damage: deny, use: allow, feed-amount: 20, feed-delay: 1, use-dripleaf: allow,
+        flags: {use: allow, fall-damage: deny, feed-amount: 20, feed-delay: 1, use-dripleaf: allow,
             pvp: allow}
         owners: {}
         type: cuboid
@@ -1805,7 +1808,7 @@ regions:
         max: {x: -348, y: 131, z: -72}
         members: {}
         flags: {other-explosion: allow, lava-fire: allow, use: allow, lighter: allow,
-            pistons: allow, pvp: allow, chest-access: allow, mob-spawning: deny, fire-spread: allow,
+            chest-access: allow, pistons: allow, pvp: allow, mob-spawning: deny, fire-spread: allow,
             enderpearl: allow, sleep: deny, creeper-explosion: allow, build: allow,
             tnt: allow}
         owners: {}
@@ -1878,7 +1881,7 @@ regions:
         max: {x: 100, y: 80, z: -56}
         members: {}
         flags: {other-explosion: allow, item-drop: deny, feed-amount: 20, feed-delay: 1,
-            tnt: allow, pvp: allow, heal-amount: 20, heal-delay: 1}
+            pvp: allow, tnt: allow, heal-amount: 20, heal-delay: 1}
         owners: {}
         type: cuboid
         priority: 0
@@ -1924,8 +1927,8 @@ regions:
         priority: 3
     mowobbler-ctf-arena:
         members: {}
-        flags: {sleep: deny, build: allow, use: allow, mob-damage: allow, pvp: allow,
-            mob-spawning: deny, fire-spread: deny}
+        flags: {sleep: deny, creeper-explosion: allow, build: allow, use: allow, mob-damage: allow,
+            pvp: allow, tnt: allow, mob-spawning: allow, fire-spread: allow}
         owners: {}
         type: poly2d
         priority: 0
@@ -1964,7 +1967,7 @@ regions:
         min: {x: 71, y: 34, z: 744}
         max: {x: 269, y: 69, z: 865}
         members: {}
-        flags: {chest-access: allow, pvp: allow}
+        flags: {pvp: allow, chest-access: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -2053,9 +2056,9 @@ regions:
         min: {x: -46, y: 65, z: 170}
         max: {x: 54, y: 114, z: 219}
         members: {}
-        flags: {enderpearl: allow, other-explosion: allow, exit: deny, creeper-explosion: allow,
-            lava-fire: allow, build: allow, use: allow, potion-splash: allow, tnt: allow,
-            pvp: allow, chest-access: allow}
+        flags: {other-explosion: allow, enderpearl: allow, exit: deny, creeper-explosion: allow,
+            lava-fire: allow, build: allow, use: allow, potion-splash: allow, chest-access: allow,
+            pvp: allow, tnt: allow}
         owners: {}
         type: cuboid
         priority: 3
@@ -2128,8 +2131,8 @@ regions:
         max: {x: 2159, y: 265, z: 81}
         members: {}
         flags: {sleep: deny, exit: deny, vehicle-place: allow, use: allow, mob-damage: deny,
-            feed-delay: 1, feed-amount: 20, vehicle-destroy: deny, damage-animals: deny,
-            pvp: deny, ride: allow, mob-spawning: deny}
+            feed-amount: 20, feed-delay: 1, damage-animals: deny, vehicle-destroy: deny,
+            pvp: deny, mob-spawning: deny, ride: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -2289,7 +2292,7 @@ regions:
         min: {x: 23, y: 41, z: -491}
         max: {x: 224, y: 119, z: -290}
         members: {}
-        flags: {exit: deny, fall-damage: deny, use: allow, pistons: allow, pvp: allow,
+        flags: {exit: deny, use: allow, fall-damage: deny, pistons: allow, pvp: allow,
             chest-access: allow}
         owners: {}
         type: cuboid
@@ -2307,7 +2310,7 @@ regions:
         max: {x: 454, y: 90, z: -108}
         members: {}
         flags: {item-drop: deny, item-pickup: deny, feed-amount: 20, feed-delay: 1,
-            block-break: allow, lava-flow: deny, tnt: deny}
+            block-break: allow, tnt: deny, lava-flow: deny}
         owners: {}
         type: cuboid
         priority: 0
@@ -2331,7 +2334,7 @@ regions:
         min: {x: -16, y: 62, z: -774}
         max: {x: 86, y: 193, z: -636}
         members: {}
-        flags: {mob-damage: allow, pistons: allow, chest-access: deny, pvp: deny,
+        flags: {mob-damage: allow, pistons: allow, pvp: deny, chest-access: deny,
             mob-spawning: allow}
         owners: {}
         type: cuboid

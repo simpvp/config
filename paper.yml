@@ -164,7 +164,7 @@ world-settings:
     portal-search-vanilla-dimension-scaling: true
     max-leash-distance: 10.0
     should-remove-dragon: false
-    fix-climbing-bypassing-cramming-rule: true
+    fix-climbing-bypassing-cramming-rule: false
     zombies-target-turtle-eggs: true
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true

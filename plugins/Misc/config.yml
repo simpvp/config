@@ -1,5 +1,4 @@
-announcement: 'Please consider donating to the server''s patreon to help cover costs:
-  https://www.patreon.com/simpvp'
+announcement: ''
 motd: |2
        Welcome to §6§lhttp://simpvp.net/
 
@@ -192,6 +191,11 @@ infoCommands:
   message: https://www.youtube.com/watch?v=Rhe5D6sRwzo
 - command: downtime
   message: down 00:00
+- command: halloween
+  message: https://youtu.be/ZVuToMilP0A
+- command: spooky
+  message: https://www.youtube.com/watch?v=-1dSY6ZuXEY
+
 serverListMessages:
 - Hey everyone
 - '&ctomato soop'
@@ -204,3 +208,4 @@ serverListMessages:
 - '&0went'
 - '&9sell wool'
 - '&aStarted April 23rd, 2011'
+- '&6It is Spooky Month'

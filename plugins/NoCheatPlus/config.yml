@@ -794,7 +794,7 @@ compatibility:
       enable: true
   blocks:
     blockcache:
-      minimalworldy: 0
+      minimalworldy: -64
     breakingtime:
       IRON_BLOCK:PICKAXE:DIAMOND:12: 1139
     allowinstantbreak: []

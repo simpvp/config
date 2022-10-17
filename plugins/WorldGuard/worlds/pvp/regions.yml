@@ -10,6 +10,14 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    jukebox:
+        min: {x: 242, y: 52, z: -201}
+        max: {x: 272, y: 61, z: -167}
+        members: {}
+        flags: {water-flow: deny, lava-flow: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
     __global__:
         members: {}
         flags:
