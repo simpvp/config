@@ -8,6 +8,7 @@ disableCancelRestart:
 - 15247f8c-54ab-4315-9d08-7ae17395a4c5
 - dabec769-9e12-4680-81bf-833e691e71dd
 - ee0f6a65-cff9-4527-b7be-1eeb9f240e4a
+- 6d070362-3a95-4fc5-b279-59946fdcea3c
 simpvpHostnameChecker: true
 disableElderGuardians:
 - world
@@ -195,6 +196,10 @@ infoCommands:
   message: https://youtu.be/ZVuToMilP0A
 - command: spooky
   message: https://www.youtube.com/watch?v=-1dSY6ZuXEY
+- command: jd
+  message: Did you mean /age?
+- command: joindate
+  message: Did you mean /age?
 
 serverListMessages:
 - Hey everyone
@@ -208,4 +213,6 @@ serverListMessages:
 - '&0went'
 - '&9sell wool'
 - '&aStarted April 23rd, 2011'
-- '&6It is Spooky Month'
+- '&2I&4t &2i&4s &2C&4h&2r&4i&2s&4t&2m&4a&2s &4M&2o&4n&2t&4h'
+- '&6Pizza Rolls &8> &ePizza Bagels'
+

@@ -304,7 +304,7 @@ checks:
     active: default
     maxloopletencyticks: 8
     canceldead: false
-    toolchangepenalty: 500
+    toolchangepenalty: 0
     pvp:
       knockbackvelocity: default
     yawrate:
