@@ -158,7 +158,7 @@ world-settings:
     allow-using-signs-inside-spawn-protection: false
     fix-wither-targeting-bug: false
     ender-dragons-death-always-places-dragon-egg: false
-    update-pathfinding-on-block-update: true
+    update-pathfinding-on-block-update: false
     only-players-collide: false
     allow-vehicle-collisions: true
     portal-search-vanilla-dimension-scaling: true
@@ -192,10 +192,10 @@ world-settings:
     max-auto-save-chunks-per-tick: 8
     save-queue-limit-for-auto-save: 50
     enable-treasure-maps: true
-    experience-merge-max-value: -1
+    experience-merge-max-value: 1500
     max-chunk-sends-per-tick: 81
     max-chunk-gens-per-tick: 10
-    prevent-moving-into-unloaded-chunks: false
+    prevent-moving-into-unloaded-chunks: true
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     filter-nbt-data-from-spawn-eggs-and-related: true
