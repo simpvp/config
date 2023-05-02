@@ -18,6 +18,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    below_nether:
+        min: {x: -29999999, y: -65, z: -29999999}
+        max: {x: 29999999, y: -1, z: 29999999}
+        members: {}
+        flags: {entry: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
     __global__:
         members: {}
         flags: {}

@@ -34,6 +34,7 @@ regions:
                 'minecraft:husk', 'minecraft:shulker', 'minecraft:stray', 'minecraft:silverfish',
                 'minecraft:enderman', 'minecraft:endermite', 'minecraft:vex', 'minecraft:zombie',
                 'minecraft:zombie_villager']
+            fire-spread: deny
         owners: {}
         type: global
         priority: 0
