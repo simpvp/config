@@ -83,6 +83,9 @@ disabledCmds:
 - mvenv
 - mvsilent
 - mvsleep
+- mvdebug
+- mvver
+- mvversion
 nonplayerCmds:
 - psudo
 - psudoas
@@ -149,7 +152,7 @@ infoCommands:
     The server is rented from hetzner and located in Finland. The specs are:
     * AMD Ryzen 5 3600
     * 64 GB DDR4 RAM
-    * 1 TB SSD + 6 TB HDD (lvmcache)
+    * 1 TB SSD + 12 TB HDD (lvmcache)
     * 1 Gbit/s internet connection
 - command: rules
   message: |
@@ -202,17 +205,5 @@ infoCommands:
   message: Did you mean /age?
 
 serverListMessages:
-- Hey everyone
-- '&ctomato soop'
-- wb
-- '&2cactus'
-- '&5events???'
-- '&cham samdwich'
-- '&7We love capybaras'
-- '&6Now on 1.18.2'
-- '&0went'
-- '&9sell wool'
-- '&aStarted April 23rd, 2011'
-- '&2I&4t &2i&4s &2C&4h&2r&4i&2s&4t&2m&4a&2s &4M&2o&4n&2t&4h'
-- '&6Pizza Rolls &8> &ePizza Bagels'
+- '&dNow 12 years old!'
 
