@@ -205,5 +205,5 @@ infoCommands:
   message: Did you mean /age?
 
 serverListMessages:
-- '&dNow 12 years old!'
+- '&6Now on 1.19.4'
 
