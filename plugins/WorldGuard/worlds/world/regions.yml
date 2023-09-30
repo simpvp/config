@@ -88,13 +88,22 @@ regions:
         members: {}
         flags: {lightning: deny, other-explosion: deny, wither-damage: deny, creeper-explosion: deny,
             vehicle-place: deny, water-flow: deny, passthrough: deny, enderman-grief: deny,
-            lava-flow: deny, pistons: deny, tnt: deny, fire-spread: deny}
+            pistons: deny, tnt: deny, lava-flow: deny, fire-spread: deny}
         owners: {}
+        type: cuboid
+        priority: 0
+    end:
+        min: {x: 2243, y: 34, z: 774}
+        max: {x: 2247, y: 39, z: 778}
+        members: {}
+        flags: {water-flow: deny, block-break: deny, pvp: deny, lava-flow: deny, block-place: deny}
+        owners:
+            unique-ids: [fe84938a-54bf-4b34-a202-3c7fc40f2166, 04c7b357-2279-4d99-ba9c-adb48868b19f]
         type: cuboid
         priority: 0
     1k:
         min: {x: -100, y: 0, z: -100}
-        max: {x: 100, y: 255, z: 100}
+        max: {x: 100, y: 319, z: 100}
         members: {}
         flags:
             water-flow: deny
@@ -111,15 +120,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    end:
-        min: {x: 2243, y: 34, z: 774}
-        max: {x: 2247, y: 39, z: 778}
-        members: {}
-        flags: {water-flow: deny, block-break: deny, lava-flow: deny, pvp: deny, block-place: deny}
-        owners:
-            unique-ids: [fe84938a-54bf-4b34-a202-3c7fc40f2166, 04c7b357-2279-4d99-ba9c-adb48868b19f]
-        type: cuboid
-        priority: 0
     spawn-melons-north:
         min: {x: 13, y: 59, z: 12}
         max: {x: 18, y: 59, z: 12}
@@ -180,19 +180,20 @@ regions:
         type: cuboid
         priority: 10
     outerspawn:
-        min: {x: -31, y: 0, z: -31}
-        max: {x: 31, y: 300, z: 31}
+        min: {x: -32, y: 0, z: -32}
+        max: {x: 32, y: 319, z: 32}
         members:
             unique-ids: [aa00bc43-ecb0-403a-8f61-09478da1586f]
         flags: {other-explosion: deny, lava-fire: deny, water-flow: deny, use: allow,
             greeting: '&cYou are now entering the spawn. Disabling PvP.', ice-melt: deny,
             interact: allow, chest-access: allow, firework-damage: deny, fire-spread: deny,
             enderdragon-block-damage: deny, vehicle-place: deny, mob-damage: deny,
-            entity-painting-destroy: deny, lightning: deny, wither-damage: deny, chorus-fruit-teleport: deny,
-            lighter: deny, enderman-grief: deny, pvp: deny, pistons: deny, mob-spawning: deny,
-            enderpearl: deny, creeper-explosion: deny, potion-splash: deny, tnt: deny,
-            lava-flow: deny, ghast-fireball: deny, farewell: '&cYou are now leaving
-                the spawn. Enabling PvP.'}
+            ravager-grief: deny, entity-painting-destroy: deny, lightning: deny, wither-damage: deny,
+            chorus-fruit-teleport: deny, lighter: deny, enderman-grief: deny, pvp: deny,
+            pistons: deny, mob-spawning: deny, enderpearl: deny, creeper-explosion: deny,
+            item-frame-rotation: deny, potion-splash: deny, tnt: deny, lava-flow: deny,
+            entity-item-frame-destroy: deny, ghast-fireball: deny, farewell: '&cYou
+                are now leaving the spawn. Enabling PvP.'}
         owners: {}
         type: cuboid
         priority: 3

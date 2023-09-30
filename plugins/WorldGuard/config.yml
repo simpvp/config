@@ -1,11 +1,5 @@
 regions:
     use-scheduler: true
-    sql:
-        use: false
-        dsn: jdbc:mysql://localhost/worldguard
-        username: worldguard
-        password: worldguard
-        table-prefix: ''
     enable: true
     invincibility-removes-mobs: false
     high-frequency-flags: true
@@ -36,13 +30,7 @@ protection:
     item-durability: true
     remove-infinite-stacks: false
     disable-xp-orb-drops: false
-    disable-obsidian-generators: false
     use-max-priority-association: false
-simulation:
-    sponge:
-        enable: false
-        radius: 3
-        redstone: false
 default:
     pumpkin-scuba: false
     disable-health-regain: false
@@ -100,9 +88,6 @@ player-damage:
     disable-mob-damage: false
     disable-death-messages: false
     reset-fall-on-void-teleport: false
-chest-protection:
-    enable: false
-    disable-off-check: false
 crops:
     disable-creature-trampling: false
     disable-player-trampling: false
@@ -154,6 +139,8 @@ dynamics:
     disable-crop-growth: false
     disable-coral-block-fade: false
     disable-rock-growth: false
+    disable-sculk-growth: false
+    disable-copper-block-fade: false
 blacklist:
     use-as-whitelist: false
     logging:
@@ -195,3 +182,7 @@ disable-permission-cache: false
 turtle-egg:
     disable-creature-trampling: false
     disable-player-trampling: false
+sniffer-egg:
+    disable-creature-trampling: false
+    disable-player-trampling: false
+custom-metrics-charts: true
