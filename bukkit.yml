@@ -36,7 +36,7 @@ spawn-limits:
   water-animals: 1
   ambient: 2
 chunk-gc:
-  period-in-ticks: 600
+  period-in-ticks: 400
   load-threshold: 10
 ticks-per:
   axolotl-spawns: 1
