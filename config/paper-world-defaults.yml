@@ -64,6 +64,7 @@ chunks:
     small_fireball: -1
     snowball: -1
   fixed-chunk-inhabited-time: -1
+  flush-regions-on-save: false
   max-auto-save-chunks-per-tick: 8
   prevent-moving-into-unloaded-chunks: true
 collisions:
