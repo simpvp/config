@@ -150,9 +150,9 @@ infoCommands:
 - command: specs
   message: |
     The server is rented from hetzner and located in Finland. The specs are:
-    * AMD Ryzen 5 3600
+    * Intel i5-13500
     * 64 GB DDR4 RAM
-    * 1 TB SSD + 12 TB HDD (lvmcache)
+    * 1 TB SSD + 16 TB HDD (lvmcache)
     * 1 Gbit/s internet connection
 - command: rules
   message: |
@@ -205,5 +205,5 @@ infoCommands:
   message: Did you mean /age?
 
 serverListMessages:
-- '&6Now on 1.19.4'
+- '&6Now on 1.20.1'
 
