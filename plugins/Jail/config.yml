@@ -1,17 +1,17 @@
 # The world the jail is in
 world: pvp
 corner1:
-  x: 241
+  x: 256
   y: -60
-  z: 241
+  z: 256
 corner2:
-  x: 1807
+  x: -256
   y: 319
-  z: 1807
+  z: -256
 spawn:
-  x: 1283
-  y: 152
-  z: 647
+  x: -171
+  y: 40
+  z: -152
 blocked_commands:
 - me
 - world
