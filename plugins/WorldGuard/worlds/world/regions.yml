@@ -88,7 +88,7 @@ regions:
         members: {}
         flags: {lightning: deny, other-explosion: deny, wither-damage: deny, creeper-explosion: deny,
             vehicle-place: deny, water-flow: deny, passthrough: deny, enderman-grief: deny,
-            pistons: deny, tnt: deny, lava-flow: deny, fire-spread: deny}
+            lava-flow: deny, pistons: deny, tnt: deny, fire-spread: deny}
         owners: {}
         type: cuboid
         priority: 0
@@ -96,7 +96,7 @@ regions:
         min: {x: 2243, y: 34, z: 774}
         max: {x: 2247, y: 39, z: 778}
         members: {}
-        flags: {water-flow: deny, block-break: deny, pvp: deny, lava-flow: deny, block-place: deny}
+        flags: {water-flow: deny, block-break: deny, lava-flow: deny, pvp: deny, block-place: deny}
         owners:
             unique-ids: [fe84938a-54bf-4b34-a202-3c7fc40f2166, 04c7b357-2279-4d99-ba9c-adb48868b19f]
         type: cuboid
@@ -134,8 +134,8 @@ regions:
         members: {}
         flags:
             creeper-explosion: deny
-            blocked-cmds: [/world]
             use: deny
+            blocked-cmds: [/world]
             mob-damage: deny
             vehicle-destroy: allow
             enderman-grief: deny
@@ -189,9 +189,9 @@ regions:
             interact: allow, chest-access: allow, firework-damage: deny, fire-spread: deny,
             enderdragon-block-damage: deny, vehicle-place: deny, mob-damage: deny,
             ravager-grief: deny, entity-painting-destroy: deny, lightning: deny, wither-damage: deny,
-            chorus-fruit-teleport: deny, lighter: deny, enderman-grief: deny, pvp: deny,
-            pistons: deny, mob-spawning: deny, enderpearl: deny, creeper-explosion: deny,
-            item-frame-rotation: deny, potion-splash: deny, tnt: deny, lava-flow: deny,
+            chorus-fruit-teleport: deny, lighter: deny, enderman-grief: deny, pistons: deny,
+            pvp: deny, mob-spawning: deny, enderpearl: deny, creeper-explosion: deny,
+            item-frame-rotation: deny, potion-splash: deny, lava-flow: deny, tnt: deny,
             entity-item-frame-destroy: deny, ghast-fireball: deny, farewell: '&cYou
                 are now leaving the spawn. Enabling PvP.'}
         owners: {}
@@ -242,4 +242,12 @@ regions:
         flags: {}
         owners: {}
         type: global
+        priority: 0
+    ostrich-cheats:
+        min: {x: 47899, y: -68, z: -36534}
+        max: {x: 47923, y: 80, z: -36515}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
         priority: 0

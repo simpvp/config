@@ -9,9 +9,9 @@ corner2:
   y: 319
   z: -256
 spawn:
-  x: -171
-  y: 40
-  z: -152
+  x: 24
+  y: 93
+  z: 69
 blocked_commands:
 - me
 - world
