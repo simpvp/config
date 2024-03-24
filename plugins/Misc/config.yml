@@ -4,6 +4,10 @@ motd: |2
 
   §cCheating is not allowed, and will result in a permanent jail with no warning or second chance. This rule is enfored very strictly.
 disableCancelRestart:
+- fdde26be-4711-47e7-926a-ea5baf575e85
+- 56409768-65ff-4535-8fb0-8ae5a56a84bd
+- 5a406996-70a0-467f-b64c-b88b56596586
+- f89b1ec6-f55c-4c43-b877-8267b7d26e6e
 - 47f829c3-7c83-4ce2-87c1-a3e3299f5126
 - 15247f8c-54ab-4315-9d08-7ae17395a4c5
 - dabec769-9e12-4680-81bf-833e691e71dd
@@ -174,6 +178,8 @@ infoCommands:
 - command: capybara
   message: |
     https://www.youtube.com/watch?v=C7xyoPqYkYM
+- command: onion
+  message: https://www.youtube.com/watch?v=dCGS067s0zo
 - command: help
   message: |
     /kill - §6Commits suicide§r
@@ -205,5 +211,8 @@ infoCommands:
   message: Did you mean /age?
 
 serverListMessages:
-- '&6Now on 1.20.1'
+- '&6Now on 1.20.4'
+- '&9Blueberry'
+- '&6Try the new /downtime command!'
+
 

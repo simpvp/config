@@ -1,17 +1,17 @@
 # The world the jail is in
 world: pvp
 corner1:
-  x: 256
+  x: 166
   y: -60
-  z: 256
+  z: 166
 corner2:
-  x: -256
+  x: -166
   y: 319
-  z: -256
+  z: -166
 spawn:
-  x: 24
-  y: 93
-  z: 69
+  x: -33
+  y: 54
+  z: 18
 blocked_commands:
 - me
 - world
@@ -23,4 +23,4 @@ blocked_commands:
 - cancelrestart
 - tps
 geoipDatabase: /usr/share/GeoIP
-novpns: -1
+novpns: 1

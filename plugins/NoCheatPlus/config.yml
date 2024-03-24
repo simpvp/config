@@ -296,6 +296,9 @@ checks:
         maximum: 2000
       improbable: true
   fight:
+    visible:
+      active: default
+      actions: cancel vl>30 log:fvisible:8:5:if cancel
     impossiblehit:
       active: default
       improbable:
@@ -369,7 +372,7 @@ checks:
     fastclick:
       exclude:
       - Inventory Name Here
-      active: true
+      active: false
       sparecreative: true
       tweaks1_5: true
       limit:
@@ -631,6 +634,8 @@ checks:
       active: default
       actions: cancel log:wrongturn:0:15:icf cmdc:kickillegalrotations:0:10
 strings:
+  fvisible: '&c[player]&7 failed &c[check]&7: tried to attack target through a solid
+    obstacle &7(&cVL[violations]&7)'
   impossiblehit: '&c[player]&7 failed &c[check]&7: tried to hit an entity while performing
     another action (Tags: &6[tags]&7) &7(&cVL[violations]&7)'
   moving: '&c[player]&7 failed &c[check]&7: tried to send improbable position updates
