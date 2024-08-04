@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
+# Trap SIGINT to prevent the server from shutting down if someone accidentally presses Ctrl-C
+trap '' 2
+
 get_lock() {
 	if [ -f ./lock ]; then
 		LOCK=$(< ./lock)

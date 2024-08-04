@@ -1,13 +1,13 @@
 # The world the jail is in
 world: pvp
 corner1:
-  x: 170
-  y: 5
-  z: 170
+  x: 220
+  y: 29
+  z: 220
 corner2:
-  x: -170
-  y: 315
-  z: -170
+  x: -220
+  y: 320
+  z: -220
 spawn:
   x: 0
   y: 64

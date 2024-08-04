@@ -1,4 +1,4 @@
-announcement: 'The rules were last updated: 2023-11-04'
+announcement: ''
 motd: |2
        Welcome to §6§lhttp://simpvp.net/
 
@@ -150,7 +150,7 @@ infoCommands:
 - command: seed
   message: 'Seed: 567325795392988'
 - command: captcha
-  message: '§aThe secret word is: §bcactus'
+  message: Ask an admin for the captcha secret word.
 - command: specs
   message: |
     The server is rented from hetzner and located in Finland. The specs are:
