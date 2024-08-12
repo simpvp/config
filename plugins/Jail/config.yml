@@ -10,7 +10,7 @@ corner2:
   z: -220
 spawn:
   x: 0
-  y: 64
+  y: 91
   z: 0
 blocked_commands:
 - me

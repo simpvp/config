@@ -211,7 +211,7 @@ infoCommands:
   message: Did you mean /age?
 
 serverListMessages:
-- '&6Now on 1.20.4'
+- '&6Now on 1.21'
 - '&9Blueberry'
 - '&6Try the new /downtime command!'
 

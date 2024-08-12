@@ -16,7 +16,7 @@ else
 	CMD=("./bin/paper.sh")
 fi
 
-for DIR in plugins/*/; do
+for DIR in plugins/*/ plugins/.paper-remapped/; do
 	PLUGIN_MNTS+=("--bind" "$DIR" "/mc/$DIR")
 done
 
