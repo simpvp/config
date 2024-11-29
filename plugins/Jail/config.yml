@@ -2,16 +2,16 @@
 world: pvp
 corner1:
   x: 220
-  y: 29
+  y: 0
   z: 220
 corner2:
   x: -220
   y: 320
   z: -220
 spawn:
-  x: 0
-  y: 91
-  z: 0
+  x: 26
+  y: 86
+  z: 92
 blocked_commands:
 - me
 - world

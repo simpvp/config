@@ -46,7 +46,7 @@ regions:
         min: {x: -30, y: 0, z: -30}
         max: {x: 30, y: 255, z: 30}
         members: {}
-        flags: {}
+        flags: {soil-dry: deny, block-trampling: deny}
         owners: {}
         type: cuboid
         priority: 4
@@ -86,7 +86,7 @@ regions:
         min: {x: -4026, y: 0, z: 3973}
         max: {x: -3974, y: 264, z: 4025}
         members: {}
-        flags: {lightning: deny, other-explosion: deny, wither-damage: deny, water-flow: deny,
+        flags: {other-explosion: deny, lightning: deny, wither-damage: deny, water-flow: deny,
             enderman-grief: deny, pistons: deny, fire-spread: deny, creeper-explosion: deny,
             vehicle-place: deny, passthrough: deny, lava-flow: deny, tnt: deny, ghast-fireball: deny}
         owners: {}
@@ -96,7 +96,7 @@ regions:
         min: {x: 2243, y: 34, z: 774}
         max: {x: 2247, y: 39, z: 778}
         members: {}
-        flags: {water-flow: deny, block-break: deny, lava-flow: deny, pvp: deny, block-place: deny}
+        flags: {water-flow: deny, block-break: deny, pvp: deny, lava-flow: deny, block-place: deny}
         owners:
             unique-ids: [fe84938a-54bf-4b34-a202-3c7fc40f2166, 04c7b357-2279-4d99-ba9c-adb48868b19f]
         type: cuboid
@@ -134,13 +134,13 @@ regions:
         members: {}
         flags:
             creeper-explosion: deny
-            blocked-cmds: [/world]
             use: deny
+            blocked-cmds: [/world]
             mob-damage: deny
             vehicle-destroy: allow
             enderman-grief: deny
-            pvp: deny
             tnt: deny
+            pvp: deny
             ghast-fireball: deny
             mob-spawning: deny
             enderdragon-block-damage: deny
@@ -186,16 +186,16 @@ regions:
             unique-ids: [aa00bc43-ecb0-403a-8f61-09478da1586f]
         flags: {other-explosion: deny, frosted-ice-form: deny, lava-fire: deny, water-flow: deny,
             use: allow, greeting: '&cYou are now entering the spawn. Disabling PvP.',
-            block-trampling: deny, ice-melt: deny, interact: allow, vehicle-destroy: deny,
-            chest-access: allow, ride: deny, firework-damage: deny, fire-spread: deny,
-            enderdragon-block-damage: deny, vehicle-place: deny, mob-damage: deny,
-            ravager-grief: deny, entity-painting-destroy: deny, respawn-anchors: deny,
-            lightning: deny, wither-damage: deny, ice-form: deny, chorus-fruit-teleport: deny,
-            lighter: deny, enderman-grief: deny, pistons: deny, pvp: deny, mob-spawning: deny,
-            enderpearl: deny, creeper-explosion: deny, item-frame-rotation: deny,
-            potion-splash: deny, damage-animals: deny, tnt: deny, lava-flow: deny,
-            ghast-fireball: deny, entity-item-frame-destroy: deny, farewell: '&cYou
-                are now leaving the spawn. Enabling PvP.'}
+            ice-melt: deny, block-trampling: deny, interact: allow, vehicle-destroy: deny,
+            chest-access: allow, firework-damage: deny, ride: deny, fire-spread: deny,
+            enderdragon-block-damage: deny, sculk-growth: deny, vehicle-place: deny,
+            snowman-trails: deny, mob-damage: deny, ravager-grief: deny, entity-painting-destroy: deny,
+            respawn-anchors: deny, lightning: deny, wither-damage: deny, ice-form: deny,
+            chorus-fruit-teleport: deny, lighter: deny, enderman-grief: deny, pistons: deny,
+            pvp: deny, mob-spawning: deny, enderpearl: deny, creeper-explosion: deny,
+            item-frame-rotation: deny, potion-splash: deny, damage-animals: deny,
+            lava-flow: deny, tnt: deny, entity-item-frame-destroy: deny, ghast-fireball: deny,
+            farewell: '&cYou are now leaving the spawn. Enabling PvP.'}
         owners: {}
         type: cuboid
         priority: 3

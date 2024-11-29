@@ -49,7 +49,7 @@ snapshots:
 
 navigation-wand:
     item: compass
-    max-distance: 100
+    max-distance: 400
 
 scripting:
     timeout: 3000
