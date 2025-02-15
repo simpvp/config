@@ -21,8 +21,8 @@ regions:
     __global__:
         members: {}
         flags:
-            other-explosion: deny
             sleep: deny
+            other-explosion: deny
             creeper-explosion: deny
             water-flow: deny
             enderman-grief: deny

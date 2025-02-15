@@ -1,4 +1,4 @@
-announcement: Simpvp will be offline for up to 2 hours in the morning of Nov 28 https://simplicitypvp.net/w/Topic:Ygwu0me6ktw7apag
+announcement: ''
 motd: |2
        Welcome to §6§lhttp://simpvp.net/
 
@@ -149,8 +149,6 @@ infoCommands:
     §aThis is a survival server, you cannot change your gamemode. Doesn't matter if you're a planet minecraft reviewer, a professional builder, or someone with /force op, this is still a survival server.
 - command: seed
   message: 'Seed: 567325795392988'
-- command: captcha
-  message: Ask an admin for the captcha secret word.
 - command: specs
   message: |
     The server is rented from hetzner and located in Finland. The specs are:
@@ -209,9 +207,13 @@ infoCommands:
   message: Did you mean /age?
 - command: joindate
   message: Did you mean /age?
+- command: register
+  message: Ask an admin for the registration secret word.
+- command: website
+  message: august
 
 serverListMessages:
-- '&6Now on 1.21'
+- '&6Now on 1.21.4'
 - '&9Blueberry'
 - '&6Try the new /downtime command!'
 

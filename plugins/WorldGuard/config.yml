@@ -73,6 +73,7 @@ mobs:
     allow-tamed-spawns: true
     block-armor-stand-destroy: false
     block-vehicle-entry: false
+    block-windcharge-explosions: false
 player-damage:
     disable-fall-damage: false
     disable-lava-damage: false
@@ -141,6 +142,7 @@ dynamics:
     disable-rock-growth: false
     disable-sculk-growth: false
     disable-copper-block-fade: false
+    disable-soil-moisture-change: false
 blacklist:
     use-as-whitelist: false
     logging:
