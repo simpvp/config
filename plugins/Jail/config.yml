@@ -24,3 +24,4 @@ blocked_commands:
 - tps
 geoipDatabase: /usr/share/GeoIP
 novpns: 0
+blocked_countries: ['GB']

@@ -12,7 +12,7 @@
 regions:
     above_nether:
         min: {x: -30000000, y: 128, z: -30000000}
-        max: {x: 30000000, y: 256, z: 30000000}
+        max: {x: 30000000, y: 30000000, z: 30000000}
         members: {}
         flags: {entry: deny, mob-spawning: deny}
         owners: {}
