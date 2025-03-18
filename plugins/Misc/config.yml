@@ -3,6 +3,8 @@ motd: |2
        Welcome to §6§lhttp://simpvp.net/
 
   §cCheating is not allowed, and will result in a permanent jail with no warning or second chance. This rule is enfored very strictly.
+
+  You must be at least 18 years old to play on this server.
 disableCancelRestart:
 - 32ca876c-b707-46b9-b7e1-ab7aa5364c81
 - fdde26be-4711-47e7-926a-ea5baf575e85
@@ -211,6 +213,8 @@ infoCommands:
   message: Ask an admin for the registration secret word.
 - command: website
   message: august
+- command: privacypolicy
+  message: https://simplicitypvp.net/w/Simplicitypvp:Privacy_policy
 
 serverListMessages:
 - '&6Now on 1.21.4'
