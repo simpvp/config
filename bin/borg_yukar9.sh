@@ -20,10 +20,10 @@ else
 	PROGRESS=()
 fi
 
-PASSFILE=~/.borg_simpvp
+PASSFILE=~/.borg_simpvp_yukar9
 chmod 0600 "$PASSFILE"
 export BORG_PASSPHRASE=$(cat "$PASSFILE")
-export BORG_REPO='ssh://borg/mnt/borg/simpvp'
+export BORG_REPO='ssh://borg-yukar9/mnt/borg/simpvp'
 
 # If arguments are supplied then run those with borg with the right environment
 # variables set, letting you do for example ./borg.sh list
