@@ -158,7 +158,7 @@ blacklist:
             enable: false
             path: worldguard/logs/%Y-%m-%d.log
             open-files: 10
-summary-on-start: true
+summary-on-start: false
 security:
     deop-everyone-on-join: false
     block-in-game-op-command: false

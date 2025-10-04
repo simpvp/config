@@ -22,7 +22,6 @@ regions:
         members: {}
         flags:
             sleep: deny
-            other-explosion: deny
             creeper-explosion: deny
             water-flow: deny
             enderman-grief: deny
@@ -35,6 +34,7 @@ regions:
                 'minecraft:husk', 'minecraft:shulker', 'minecraft:stray', 'minecraft:silverfish',
                 'minecraft:enderman', 'minecraft:endermite', 'minecraft:vex', 'minecraft:zombie',
                 'minecraft:zombie_villager']
+            mob-spawning: deny
             fire-spread: deny
         owners: {}
         type: global
