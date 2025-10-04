@@ -9,9 +9,9 @@ corner2:
   y: 320
   z: -200
 spawn:
-  x: 51
+  x: 0
   y: 70
-  z: 43
+  z: 0
 blocked_commands:
 - me
 - world
@@ -22,6 +22,8 @@ blocked_commands:
 - requestrestart
 - cancelrestart
 - tps
+- mspt
 geoipDatabase: /usr/share/GeoIP
-novpns: 0
-blocked_countries: ['GB']
+novpns: -1
+blocked_countries:
+- GB

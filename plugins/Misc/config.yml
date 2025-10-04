@@ -1,8 +1,8 @@
-announcement: ''
+announcement: You can now /vote to support the server!
 motd: |2
        Welcome to §6§lhttp://simpvp.net/
 
-  §cCheating is not allowed, and will result in a permanent jail with no warning or second chance. This rule is enfored very strictly.
+  §cCheating is not allowed, and will result in a permanent jail with no warning or second chance. This rule is enforced very strictly.
 
   You must be at least 18 years old to play on this server.
 disableCancelRestart:
@@ -217,8 +217,16 @@ infoCommands:
   message: https://simplicitypvp.net/w/Simplicitypvp:Privacy_policy
 
 serverListMessages:
-- '&6Now on 1.21.4'
+- '&6Now on 1.21.8'
 - '&9Blueberry'
 - '&6Try the new /downtime command!'
 
-
+vote:
+  title: '§6You can vote daily on the following sites:'
+  footer: §6The top monthly voters will be displayed in spawn!
+  links:
+  - https://minecraftservers.org/vote/16106
+  - https://minecraft-mp.com/server/208324/vote
+  - https://minecraft-server-list.com/server/124466/vote
+  - https://mclike.com/vote-177744
+  - https://minecraft.buzz/vote/16692
