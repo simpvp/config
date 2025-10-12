@@ -35,7 +35,7 @@ fi
 
 borg create -v --stats "${PROGRESS[@]}" \
 	--compression lzma,6 \
-	--upload-ratelimit 5000 \
+	--upload-ratelimit 25000 \
 	::'mc_by_{hostname}_{utcnow}_UTC_Borg_{borgversion}' \
 	/home/mc
 
