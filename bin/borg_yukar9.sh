@@ -37,7 +37,7 @@ RET=0
 
 if ! borg create -v --stats "${PROGRESS[@]}" \
 	--compression lzma,6 \
-	--upload-ratelimit 25000 \
+	--upload-ratelimit 50000 \
 	::'mc_by_{hostname}_{utcnow}_UTC_Borg_{borgversion}' \
 	/home/mc; then
 	RET=1
