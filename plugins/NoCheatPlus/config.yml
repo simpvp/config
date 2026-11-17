@@ -1,3 +1,4 @@
+saveback-config: true
 savebackconfig: true
 configversion:
   notify: true
@@ -5,9 +6,16 @@ configversion:
   created: 1154
   saved: 1154
 logging:
+  max-queue-size: 5000
   active: true
   maxqueuesize: 5000
   extended:
+    all-violations:
+      debug: true
+      debug-only: false
+      backend:
+        trace: false
+        notify: false
     status: false
     commands:
       actions: false
@@ -18,6 +26,9 @@ logging:
         trace: false
         notify: false
   backend:
+    ingame-chat:
+      active: true
+      prefix: '&7&l[&cNC+&7&l]&7 '
     console:
       active: true
       asynchronous: true
@@ -29,6 +40,11 @@ logging:
       active: true
       prefix: '&cNCP: &f'
 data:
+  consistency-checks:
+    active: true
+    interval: 10
+    max-time: 2
+    suppress-warnings: false
   expiration:
     active: false
     duration: 60
@@ -41,6 +57,17 @@ data:
 protection:
   plugins:
     hide:
+      no-permission:
+        message: '&cI''m sorry, but you do not have permission to perform this command.
+          Please contact the server administrators if you believe that this is in
+          error.'
+        commands:
+        - plugins
+        - version
+        - icanhasbukkit
+      unknown-command:
+        message: Unknown command. Type "/help" for help.
+        commands: []
       active: false
       nopermission:
         message: '&cI''m sorry, but you do not have permission to perform this command.
@@ -54,6 +81,13 @@ protection:
         message: Unknown command. Type "/help" for help.
         commands: []
   commands:
+    console-only:
+      active: false
+      message: '&cI''m sorry, but this command can''t be executed in chat. Use the
+        console instead!'
+      commands:
+      - op
+      - deop
     consoleonly:
       active: false
       message: '&cI''m sorry, but this command can''t be executed in chat. Use the
@@ -71,6 +105,7 @@ checks:
       active: true
       actions: vl>100 log:bdirection:0:3:if
     fastbreak:
+      interval-survival: 100
       active: false
       strict: true
       delay: 100
@@ -78,6 +113,11 @@ checks:
       grace: 2000
       actions: vl>100 log:fastbreak:3:5:cif
     frequency:
+      interval-creative: 95
+      interval-survival: 45
+      short-term:
+        ticks: 5
+        limit: 7
       active: true
       intervalcreative: 95
       intervalsurvival: 45
@@ -96,6 +136,7 @@ checks:
       level: 10
       actions: vl>10 log:bwrong:0:5:if vl>30 log:bwrong:0:5:cif
       improbable:
+        feed-only: false
         feedonly: false
         weight: 2.0
   blockinteract:
@@ -115,11 +156,13 @@ checks:
       active: false
       actions: vl>100 log:bvisible:0:10:if
   blockplace:
+    boats-on-water-only: false
     active: default
     against:
       active: false
       actions: cancel
     autosign:
+      skip-empty: false
       active: true
       skipempty: false
       actions: vl>10 log:bautosign:0:3:if
@@ -127,6 +170,9 @@ checks:
       active: true
       actions: vl>100 log:bdirection:0:3:if
     fastplace:
+      short-term:
+        ticks: 10
+        limit: 6
       active: true
       limit: 22
       shortterm:
@@ -134,6 +180,7 @@ checks:
         limit: 6
       actions: vl>100 log:fastplace:3:5:cif
       improbable:
+        feed-only: false
         feedonly: false
         weight: 0.5
     reach:
@@ -150,12 +197,15 @@ checks:
       interval: 45
       actions: vl>150 log:bpspeed:3:5:if vl>10000 log:bpspeed:3:5:cif
       improbable:
+        feed-only: true
         feedonly: true
         weight: 0.3
     preventmisc:
       boatsanywhere: true
     scaffold:
+      tool-switch: true
       improbable:
+        feed-only: false
         feedonly: false
         weight: 0.4
       active: default
@@ -182,6 +232,32 @@ checks:
       tries: 3
       actions: cmd:kickcaptcha vl>4 log:captcha:2:5:cf cmd:kickcaptcha
     commands:
+      handle-as-chat:
+      - me
+      - msg
+      - emsg
+      - essentials:msg
+      - tell
+      - etell
+      - essentials:tell
+      - say
+      - esay
+      - essentials:say
+      - whisper
+      - ewhisper
+      - essentials:whisper
+      - w
+      - essentials:w
+      - ew
+      - r
+      - er
+      - essentials:r
+      - reply
+      - essentials:reply
+      - ereply
+      short-term:
+        ticks: 18
+        level: 3
       active: false
       exclusions: []
       handleaschat:
@@ -192,9 +268,18 @@ checks:
         level: 3
       actions: log:commands:0:5:cf cmd:kickcommands vl>20 log:commands:0:5:cf cmd:tempkick1
     text:
+      allow-VL-reset: true
       active: false
       allowvlreset: true
       frequency:
+        short-term:
+          minimum: 2.0
+          factor: 0.7
+          weight: 3.0
+          level: 20.0
+          actions: log:chatfast:2:3:icf cancel cmdc:kickchatfast:0:5 vl>20 cancel
+            log:chatfast:0:5:cif cmdc:kickchatfast vl>40 cancel log:chatfast:0:5:cif
+            cmdc:kickchat1
         normal:
           minimum: 0.0
           factor: 0.9
@@ -211,6 +296,11 @@ checks:
           actions: log:chatfast:0:5:cf cmd:kickchatfast vl>20 log:chatfast:0:5:cf
             cmd:kickchat1 vl>40 log:chatfast:0:5:cf cmd:kickchat5
       message:
+        letter-count: 1.0
+        after-join: 1.5
+        repeat-violation: 2.0
+        repeat-global: 1.0
+        repeat-self: 1.5
         lettercount: 1.0
         partition: 1.0
         uppercase: 1.0
@@ -220,6 +310,9 @@ checks:
         repeatglobal: 1.0
         repeatself: 1.5
         words:
+          length-av: 1.0
+          length-msg: 1.0
+          no-letter: 0.2
           lengthav: 1.0
           lengthmsg: 1.0
           noletter: 0.0
@@ -249,6 +342,7 @@ checks:
         &e>>>
       timeout: 10
     relog:
+      kick-message: Too fast re-login, try with a little delay.
       active: false
       timeout: 5000
       warning:
@@ -259,6 +353,10 @@ checks:
       kickmessage: Too fast re-login, try with a little delay.
       actions: log:relog:0:10:cf vl>20 log:relog:0:10:cf cmd:tempkick5
     logins:
+      startup-delay: 600
+      per-world-count: false
+      kick-message: Too many players are logging in at the same time, please try again
+        later.
       active: true
       startupdelay: 600
       perworldcount: false
@@ -268,13 +366,16 @@ checks:
   combined:
     active: default
     enderpearl:
+      prevent-click-on-block: true
       active: true
-      preventclickblock: true
+      preventclickblock: false
     improbable:
       active: true
       level: 300
       actions: log:improbable:2:8:if
     invulnerable:
+      initial-ticks:
+        join: -1
       active: true
       triggers:
         always: false
@@ -285,9 +386,6 @@ checks:
       - FALL
       modifiers:
         all: 0
-    munchhausen:
-      active: false
-      actions: vl>100 log:munchhausen:0:60:if
     yawrate:
       rate: 380
       penalty:
@@ -296,11 +394,17 @@ checks:
         maximum: 2000
       improbable: true
   fight:
+    cancel-dead: true
+    enforce-item-release: true
+    enforce-closed-inventory: true
+    max-loop-latency-ticks: 8
+    tool-change-penalty: 0
+    knockback-velocity: default
     visible:
       active: default
       actions: cancel vl>30 log:fvisible:8:5:if cancel
     impossiblehit:
-      active: default
+      active: false
       improbable:
         weight: 0.05
       actions: cancel vl>3 cancel log:impossiblehit:0:5:if
@@ -333,6 +437,8 @@ checks:
       buffer: 1000
       actions: vl>10 log:fastheal:0:10:i vl>30 log:fastheal:0:10:if
     godmode:
+      min-age: 1100
+      max-age: 5000
       active: true
       minage: 1100
       maxage: 5000
@@ -341,6 +447,9 @@ checks:
       active: true
       actions: vl>10 log:noswing:0:5:if
     reach:
+      survival-distance: 4.02
+      reduce-distance: 0.8
+      reduce-step: 0.14
       precision: true
       active: true
       survivaldistance: 4.4
@@ -350,6 +459,7 @@ checks:
       reducestep: 0.15
       actions: vl>10 log:freach:2:5:if
       improbable:
+        feed-only: false
         feedonly: false
         weight: 2.0
     selfhit:
@@ -357,25 +467,17 @@ checks:
       warn_player: true
       active: true
       actions: log:fselfhit:0:5:if vl>10 log:fselfhit:0:5:icf
-    speed:
-      active: true
-      limit: 15
-      actions: log:fspeed:0:5:if
-      shortterm:
-        ticks: 7
-        limit: 6
-      improbable:
-        feedonly: false
-        weight: 2.0
   inventory:
     active: default
     fastclick:
+      spare-creative: true
+      min-interaction-duration: 155
       exclude:
       - Inventory Name Here
       active: false
       sparecreative: true
-      tweaks1_5: true
       limit:
+        short-term: 4
         chest: 155
         shortterm: 4
         normal: 15
@@ -387,12 +489,10 @@ checks:
       strict: true
       delay: 130
       improbable:
+        feed-only: false
         feedonly: false
         weight: 0.6
       actions: vl>15 log:instantbow:2:5:if
-    instanteat:
-      active: true
-      actions: log:instanteat:2:5:if
     fastconsume:
       active: true
       duration: 0.7
@@ -400,32 +500,35 @@ checks:
       items: []
       actions: log:fastconsume:2:5:if
     gutenberg:
+      page-limit: 50
       pagelimit: 50
       active: true
       actions: log:gutenberg:0:10:icf
-    items:
-      active: true
     open:
-      active: true
-      close: true
+      close-on-move: false
+      disable-creative: true
+      improbable-weight: 1
+      active: false
+      close: false
       cancelother: false
     hotfix:
       duplication:
+        falling-block-endportal: true
         fallingblockendportal: true
-    inventorymove:
-      hdistdivisor: 4
-      improbable:
-        feedonly: false
-        weight: 2.0
-      active: default
-      disable_creative: true
-      actions: cancel vl> 5 log:inventorymove:4:5:i cancel
   moving:
+    ignore-stance: default
+    temp-kick-illegal: true
+    speed-grace: 4.0
+    enforce-location: default
     trace:
+      max-age: 30
+      max-size: 30
       maxage: 30
       maxsize: 30
     active: default
     creativefly:
+      ignore-allow-flight: true
+      ignore-creative: false
       active: true
       ignoreallowflight: false
       ignorecreative: false
@@ -436,22 +539,24 @@ checks:
           vertical:
             ascend:
               speed: 600
-            maxheight: 128
+            maxheight: 50000
           modifiers: false
         creative:
           horizontal:
             speed: 100
           vertical:
+            max-height: 128
             ascend:
               speed: 100
-            maxheight: 128
+            maxheight: 50000
         spectator:
           horizontal:
             speed: 450
           vertical:
+            max-height: 200
             ascend:
               speed: 170
-            maxheight: 128
+            maxheight: 50000
           gravity: false
           ground: false
         levitation:
@@ -460,27 +565,26 @@ checks:
           vertical:
             ascend:
               speed: 10
-            maxheight: 128
+            maxheight: 50000
             gravity: false
           modifiers: false
           gravity: false
           ground: false
         elytra:
           resetFwOnground: false
-          strict: true
           horizontal:
             speed: 520
             modsprint: 1.0
           vertical:
             ascend:
               speed: 0
-            maxheight: 128
+            maxheight: 50000
           modifiers: false
         slowfalling:
           modifiers: true
           ground: true
           vertical:
-            maxheight: 128
+            maxheight: 50000
             gravity: false
             ascend:
               speed: 0
@@ -488,17 +592,27 @@ checks:
             speed: 65
       actions: log:flyfile:3:5:f vl>10000 log:flylong:0:5:i log:flyfile:0:5:cf
     morepackets:
+      eps-ideal: 20
+      eps-max: 22
       active: true
       seconds: 6
       epsideal: 20
       epsmax: 22
       burst:
+        direct-violation: 10
+        epm-violation: 95
         packets: 40
         directviolation: 60
         epmviolation: 180
       setbackage: 40
       actions: vl>100 log:morepackets:0:2:if
     nofall:
+      deal-damage: true
+      skip-allow-flight: true
+      reset-on-violation: false
+      reset-on-teleport: false
+      reset-on-vehicle: true
+      anti-criticals: true
       active: false
       dealdamage: false
       skipallowflight: true
@@ -514,6 +628,7 @@ checks:
         teleport:
           active: true
         command:
+          try-teleport: true
           active: true
           tryteleport: true
           prefixes:
@@ -525,10 +640,12 @@ checks:
           - set back
           - back set
     survivalfly:
+      setback-policy:
+        falldamage: true
       active: true
       extended:
+        strict-speed-prediction: true
         step-accounting: true
-        noslow: true
         horizontal-accounting: true
         reset-activeitem: true
         vertical-accounting: true
@@ -538,6 +655,9 @@ checks:
         voidtovoid: true
       actions: log:flyfile:3:10:f  vl>10000 log:flylong:0:5:i log:flyfile:0:5:cf
       hover:
+        login-ticks: 60
+        fall-damage: true
+        sf-violation: 200
         active: false
         step: 5
         ticks: 85
@@ -545,10 +665,15 @@ checks:
         falldamage: false
         sfviolation: 500
       leniency:
+        freeze-count: 40
+        freeze-inair: true
         freezecount: 40
         freezeinair: true
-        hbufmax: 1.0
         violationfrequency:
+          max-threshold-vl: 35
+          no-addition-vl: 5
+          amount-to-add: 5
+          last-violated-move-count: 10
           active: true
           debug: false
           maxleniencyvl: 35
@@ -556,24 +681,29 @@ checks:
           morevls: 5
           movecount: 10
     velocity:
+      activation-counter: 20
+      activation-ticks: 140
       activationcounter: 80
       activationticks: 140
-      strictinvalidation: true
     splitmoves: default
     ignorestance: default
     tempkickillegal: false
     loadchunks:
+      world-change: true
       join: true
       move: true
       teleport: true
       worldchange: true
     sprintinggrace: 2.0
-    assumesprint: true
     speedgrace: 4.0
     enforcelocation: default
     setback:
       method: default
     vehicle:
+      prevent-destroy-own: true
+      enforce-location: default
+      schedule-setbacks: default
+      schedule-set-passenger: default
       schedulesetpassenger: default
       preventdestroyown: true
       enforcelocation: default
@@ -582,15 +712,25 @@ checks:
         active: true
         actions: vl>10 log:morepackets:0:2:if
       envelope:
+        hdist-cap:
+          default: 0.9
+          pig: 0.3
         active: default
         actions: vl>100 log:vehicleenvelope:0:15:icf
         hdistcap:
           default: 0.9
           pig: 0.3
     message:
+      illegal-player-move: Illegal move.
+      illegal-vehicle-move: Illegal vehicle move.
       illegalplayermove: Illegal move.
       illegalvehiclemove: Illegal vehicle move.
   net:
+    togglefrequency:
+      active: default
+      seconds: 1
+      limit: 25
+      actions: cancel vl>10 cancel log:togglefrequency:3:5:if
     moving:
       active: default
       actions: cancel vl>17 cancel log:moving:10:15:i
@@ -607,33 +747,35 @@ checks:
       improbable:
         weight: 3.0
     flyingfrequency:
+      packets-per-second: 60
       active: false
       seconds: 5
       packetspersecond: 60
       actions: cancel
-      reduceredundant:
-        active: true
-        seconds: 3
-        actions: cancel
     keepalivefrequency:
       seconds: 20
       active: true
       actions: vl>10 log:keepalive:0:10:if vl>40 log:keepalive:0:10:icf vl>100 log:keepalive:0:10:icf
     packetfrequency:
+      limit-per-second: 300
       active: default
       limitpersecond: 200
       seconds: 4
       actions: cancel cmd:kickpacketfrequency
     sounddistance:
+      max-distance: 320
       active: true
       maxdistance: 320
     superseded:
       flying:
+        cancel-waiting: true
         cancelwaiting: false
     wrongturn:
       active: default
       actions: cancel log:wrongturn:0:15:icf cmdc:kickillegalrotations:0:10
 strings:
+  togglefrequency: '&c[player]&7 failed &c[check]&7: tried to toggle sneak/sprint
+    too quickly &7(&cVL[violations]&7)'
   fvisible: '&c[player]&7 failed &c[check]&7: tried to attack target through a solid
     obstacle &7(&cVL[violations]&7)'
   impossiblehit: '&c[player]&7 failed &c[check]&7: tried to hit an entity while performing
@@ -783,6 +925,7 @@ compatibility:
           keys:
           - nocheat.exempt
       npc:
+        bukkit-npc: true
         active: true
         bukkitnpc: true
         metadata:
@@ -793,11 +936,27 @@ compatibility:
       join: true
       leave: true
   server:
+    CB-dedicated:
+      enable: true
+    CB-eflect:
+      enable: true
     cbdedicated:
       enable: true
     cbreflect:
       enable: true
   blocks:
+    breaking-time: []
+    allow-instant-break: []
+    override-flags:
+      snow: default
+    block-cache:
+      minimal-world-Y: -64
+    change-tracker:
+      active: true
+      pistons: true
+      max-age-icks: 20
+      perworld:
+        max-entries: 1000
     blockcache:
       minimalworldy: -64
     breakingtime:
@@ -837,3 +996,8 @@ permissions:
     - 'nocheatplus.bypass* :: ALWAYS'
     - 'regex:^nocheatplus\.checks\..*\.silent$ :: FALSE'
     - 'nocheatplus.checks* :: INTERVAL:6'
+config-version:
+  notify: true
+  notify-max-paths: 5
+  saved: 1154
+  created: 1154

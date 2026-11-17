@@ -1,4 +1,4 @@
-announcement: The rules have been updated to disallow the disabling of lava fog.
+announcement: Now on version 26.3!
 motd: |2
        Welcome to §6§lhttp://simpvp.net/
 
@@ -9,7 +9,6 @@ disableCancelRestart:
 - 32ca876c-b707-46b9-b7e1-ab7aa5364c81
 - fdde26be-4711-47e7-926a-ea5baf575e85
 - 5a406996-70a0-467f-b64c-b88b56596586
-- f89b1ec6-f55c-4c43-b877-8267b7d26e6e
 - 47f829c3-7c83-4ce2-87c1-a3e3299f5126
 - 15247f8c-54ab-4315-9d08-7ae17395a4c5
 - dabec769-9e12-4680-81bf-833e691e71dd
@@ -19,6 +18,7 @@ simpvpHostnameChecker: true
 disableElderGuardians:
 - world
 projectileOwnerMaxDistance: 300
+minimum-uptime-hours: 24
 blockLogWorlds: []
 disableSelectors: true
 logNonPlayerCmds: true
@@ -92,6 +92,9 @@ disabledCmds:
 - mvdebug
 - mvver
 - mvversion
+- viaver
+- viaversion
+- vvbukkit
 nonplayerCmds:
 - psudo
 - psudoas
@@ -217,13 +220,14 @@ infoCommands:
   message: https://simplicitypvp.net/w/Simplicitypvp:Privacy_policy
 
 serverListMessages:
-- '&6Now on 1.21.8'
+- '&6Now on 26.3'
 - '&9Blueberry'
 - '&6Try the new /downtime command!'
 
 vote:
   title: '§6You can vote daily on the following sites:'
   footer: §6The top monthly voters will be displayed in spawn!
+  openall: https://simpvp.net/vote
   links:
   - https://minecraftservers.org/vote/16106
   - https://minecraft-mp.com/server/208324/vote

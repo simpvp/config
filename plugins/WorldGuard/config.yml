@@ -22,6 +22,7 @@ regions:
     disable-bypass-by-default: false
     announce-bypass-status: false
     set-parent-on-claim: ''
+    use-pre-creature-spawn-event: false
 auto-invincible: false
 use-player-move-event: true
 host-keys: {}
@@ -143,6 +144,7 @@ dynamics:
     disable-sculk-growth: false
     disable-copper-block-fade: false
     disable-soil-moisture-change: false
+    disable-lava-harden: false
 blacklist:
     use-as-whitelist: false
     logging:

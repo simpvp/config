@@ -11,8 +11,8 @@
 #
 regions:
     above_map_limit:
-        min: {x: -30000000, y: 600, z: -30000000}
-        max: {x: 30000000, y: 3000, z: 30000000}
+        min: {x: -30000000, y: 50000, z: -30000000}
+        max: {x: 30000000, y: 52000, z: 30000000}
         members: {}
         flags: {entry: deny}
         owners: {}

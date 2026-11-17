@@ -67,6 +67,8 @@ chunks:
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
   max-auto-save-chunks-per-tick: 8
+  min-chunk-unload-count: 50
+  min-chunk-unload-fraction: 0.05
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
@@ -77,6 +79,7 @@ collisions:
 command-blocks:
   force-follow-perm-level: true
   permissions-level: 2
+  time-format-pattern: default
 entities:
   armor-stands:
     do-collision-entity-lookups: true
@@ -102,6 +105,7 @@ entities:
       - HARD
     ender-dragons-death-always-places-dragon-egg: false
     experience-merge-max-value: 1500
+    inactive-mob-goal-selector-throttle-rate: disabled
     mobs-can-always-pick-up-loot:
       skeletons: false
       zombies: false
@@ -125,6 +129,7 @@ entities:
     player-insomnia-start-ticks: 72000
     should-remove-dragon: false
     spawner-nerfed-mobs-should-jump: false
+    stuck-entity-poi-retry-delay: 200
     zombie-villager-infection-chance: default
     zombies-target-turtle-eggs: true
   markers:
@@ -186,6 +191,7 @@ entities:
     - SleepingY
     - SleepingZ
     iron-golems-can-spawn-in-air: false
+    max-arrow-despawn-invulnerability: 200
     monster-spawn-max-light-level: default
     non-player-arrow-despawn-rate: '60'
     per-player-mob-spawns: true
@@ -235,6 +241,7 @@ environment:
   disable-ice-and-snow: false
   disable-thunder: false
   fire-tick-delay: 30
+  fix-missing-tree-snow: false
   frosted-ice:
     delay:
       max: 40
@@ -265,7 +272,7 @@ fishing-time-range:
 fixes:
   disable-unloaded-chunk-enderpearl-exploit: false
   falling-block-height-nerf: disabled
-  fix-items-merging-through-walls: false
+  fix-items-merging-through-walls: true
   fix-wither-targeting-bug: false
   prevent-tnt-from-moving-in-water: false
   remove-corrupt-tile-entities: false
@@ -294,6 +301,7 @@ max-growth-height:
   cactus: 3
   reeds: 3
 misc:
+  allow-remote-ender-dragon-respawning: false
   alternate-current-update-order: HORIZONTAL_FIRST_OUTWARD
   disable-end-credits: false
   disable-relative-projectile-velocity: false
@@ -301,7 +309,6 @@ misc:
   legacy-ender-pearl-behavior: true
   max-leash-distance: 10.0
   redstone-implementation: EIGENCRAFT
-  shield-blocking-delay: 5
   show-sign-click-command-failure-msgs-to-player: false
   update-pathfinding-on-block-update: false
   villages-load-chunks: false
@@ -312,8 +319,6 @@ scoreboards:
   use-vanilla-world-scoreboard-name-coloring: true
 spawn:
   allow-using-signs-inside-spawn-protection: false
-  keep-spawn-loaded: true
-  keep-spawn-loaded-range: 8
 tick-rates:
   behavior:
     villager:
@@ -329,3 +334,6 @@ tick-rates:
 unsupported-settings:
   disable-world-ticking-when-empty: false
   fix-invulnerable-end-crystal-exploit: true
+  ticking:
+    block-entities: true
+    chunks: true

@@ -10,6 +10,14 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    melonstripbackright:
+        min: {x: 7, y: 59, z: 18}
+        max: {x: 9, y: 59, z: 18}
+        members: {}
+        flags: {block-break: allow, crop-growth: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
     spawn_forestlounge_door:
         min: {x: -10, y: 43, z: -21}
         max: {x: -8, y: 44, z: -19}
@@ -18,35 +26,11 @@ regions:
         owners: {}
         type: cuboid
         priority: 5
-    spawn-melons-west-north:
-        min: {x: 6, y: 59, z: 17}
-        max: {x: 8, y: 59, z: 17}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 5
-    spawn-melons-west-south:
-        min: {x: 6, y: 59, z: 21}
-        max: {x: 8, y: 59, z: 21}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 5
-    spawn-melons-south:
-        min: {x: 13, y: 59, z: 26}
-        max: {x: 18, y: 59, z: 26}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 5
     innerspawn:
         min: {x: -30, y: 0, z: -30}
         max: {x: 30, y: 255, z: 30}
         members: {}
-        flags: {soil-dry: deny, block-trampling: deny}
+        flags: {soil-dry: deny, copper-fade: deny, block-trampling: deny}
         owners: {}
         type: cuboid
         priority: 4
@@ -58,19 +42,27 @@ regions:
         owners: {}
         type: cuboid
         priority: 10
-    spawn-melons-west-center:
-        min: {x: 6, y: 59, z: 19}
-        max: {x: 8, y: 59, z: 19}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 5
     above_map_limit:
-        min: {x: -30000000, y: 600, z: -30000000}
-        max: {x: 30000000, y: 3000, z: 30000000}
+        min: {x: -30000000, y: 50000, z: -30000000}
+        max: {x: 30000000, y: 52000, z: 30000000}
         members: {}
         flags: {entry: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
+    melonstrip2:
+        min: {x: 14, y: 59, z: 13}
+        max: {x: 19, y: 59, z: 13}
+        members: {}
+        flags: {block-break: allow, crop-growth: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    melonstrip1:
+        min: {x: 14, y: 59, z: 27}
+        max: {x: 19, y: 59, z: 27}
+        members: {}
+        flags: {block-break: allow, crop-growth: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -120,14 +112,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    spawn-melons-north:
-        min: {x: 13, y: 59, z: 12}
-        max: {x: 18, y: 59, z: 12}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 5
     events:
         min: {x: 49500, y: 0, z: 49499}
         max: {x: 50500, y: 255, z: 50499}
@@ -139,11 +123,27 @@ regions:
             mob-damage: deny
             vehicle-destroy: allow
             enderman-grief: deny
-            pvp: deny
             tnt: deny
+            pvp: deny
             ghast-fireball: deny
             mob-spawning: deny
             enderdragon-block-damage: deny
+        owners: {}
+        type: cuboid
+        priority: 0
+    melonstripbackleft:
+        min: {x: 7, y: 59, z: 22}
+        max: {x: 9, y: 59, z: 22}
+        members: {}
+        flags: {block-break: allow, crop-growth: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    melonstripbackcenter:
+        min: {x: 7, y: 59, z: 20}
+        max: {x: 9, y: 59, z: 20}
+        members: {}
+        flags: {block-break: allow, crop-growth: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -155,14 +155,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
-    spawn-melons-center:
-        min: {x: 16, y: 58, z: 18}
-        max: {x: 16, y: 58, z: 20}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 5
     spawn-invincible:
         min: {x: -31, y: 62, z: -31}
         max: {x: 31, y: 255, z: 31}
@@ -185,17 +177,18 @@ regions:
         members:
             unique-ids: [aa00bc43-ecb0-403a-8f61-09478da1586f]
         flags: {other-explosion: deny, frosted-ice-form: deny, lava-fire: deny, water-flow: deny,
-            greeting: '&cYou are now entering the spawn. Disabling PvP.', ice-melt: deny,
-            block-trampling: deny, vehicle-destroy: deny, interact: allow, chest-access: allow,
-            ride: allow, firework-damage: deny, fire-spread: deny, enderdragon-block-damage: deny,
-            sculk-growth: deny, vehicle-place: deny, snowman-trails: deny, mob-damage: deny,
-            entity-painting-destroy: deny, ravager-grief: deny, respawn-anchors: deny,
-            lightning: deny, ice-form: deny, wither-damage: deny, chorus-fruit-teleport: deny,
-            lighter: deny, enderman-grief: deny, pvp: deny, pistons: deny, mob-spawning: deny,
-            enderpearl: deny, creeper-explosion: deny, item-frame-rotation: deny,
-            potion-splash: deny, damage-animals: deny, tnt: deny, lava-flow: deny,
-            ghast-fireball: deny, entity-item-frame-destroy: deny, farewell: '&cYou
-                are now leaving the spawn. Enabling PvP.'}
+            greeting: '&cYou are now entering the spawn. Disabling PvP.', block-trampling: deny,
+            ice-melt: deny, snow-fall: deny, interact: allow, vehicle-destroy: deny,
+            chest-access: allow, firework-damage: deny, ride: allow, fire-spread: deny,
+            enderdragon-block-damage: deny, sculk-growth: deny, vehicle-place: deny,
+            snowman-trails: deny, mob-damage: deny, ravager-grief: deny, entity-painting-destroy: deny,
+            respawn-anchors: deny, lightning: deny, ice-form: deny, wither-damage: deny,
+            chorus-fruit-teleport: deny, lighter: deny, enderman-grief: deny, pistons: deny,
+            pvp: deny, mob-spawning: deny, enderpearl: deny, creeper-explosion: deny,
+            item-frame-rotation: deny, potion-splash: deny, damage-animals: deny,
+            snow-melt: deny, tnt: deny, lava-flow: deny, entity-item-frame-destroy: deny,
+            ghast-fireball: deny, farewell: '&cYou are now leaving the spawn. Enabling
+                PvP.'}
         owners: {}
         type: cuboid
         priority: 3
@@ -207,6 +200,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 10
+    melonstripmiddle:
+        min: {x: 17, y: 58, z: 19}
+        max: {x: 17, y: 58, z: 21}
+        members: {}
+        flags: {block-break: allow, crop-growth: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
     endportal3:
         min: {x: -1119, y: 139, z: -159}
         max: {x: -1117, y: 142, z: -157}
@@ -223,6 +224,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    spawn-christmas-cookie:
+        min: {x: -23, y: 64, z: -18}
+        max: {x: -23, y: 64, z: -18}
+        members: {}
+        flags: {use: allow, interact: allow}
+        owners: {}
+        type: cuboid
+        priority: 100
     endportal1:
         min: {x: 483, y: 70, z: 1074}
         max: {x: 485, y: 73, z: 1076}

@@ -21,20 +21,18 @@ regions:
     __global__:
         members: {}
         flags:
+            time-lock: '18000'
             sleep: deny
             creeper-explosion: deny
             water-flow: deny
             enderman-grief: deny
             lava-flow: deny
-            deny-spawn: ['minecraft:blaze', 'minecraft:skeleton', 'minecraft:elder_guardian',
-                'minecraft:skeleton_horse', 'minecraft:ghast', 'minecraft:guardian',
-                'minecraft:vindicator', 'minecraft:magma_cube', 'minecraft:spider',
-                'minecraft:creeper', 'minecraft:wither', 'minecraft:slime', 'minecraft:evoker',
-                'minecraft:phantom', 'minecraft:witch', 'minecraft:wither_skeleton',
-                'minecraft:husk', 'minecraft:shulker', 'minecraft:stray', 'minecraft:silverfish',
-                'minecraft:enderman', 'minecraft:endermite', 'minecraft:vex', 'minecraft:zombie',
-                'minecraft:zombie_villager']
-            mob-spawning: deny
+            deny-spawn: ['minecraft:skeleton', 'minecraft:pig', 'minecraft:frog',
+                'minecraft:husk', 'minecraft:sheep', 'minecraft:skeleton_horse', 'minecraft:stray',
+                'minecraft:enderman', 'minecraft:cow', 'minecraft:spider', 'minecraft:chicken',
+                'minecraft:creeper', 'minecraft:wither', 'minecraft:zombie_villager',
+                'minecraft:slime']
+            mob-spawning: allow
             fire-spread: deny
         owners: {}
         type: global
